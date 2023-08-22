@@ -1,5 +1,5 @@
 @charset "UFT-8";
-@import "variables", "mixin", "fonts", "reset", "main", "contents";
+@import "variables", "mixin", "fonts", "reset";
 
 // comm.scss -
 // 공통요소 : 헤더, 풋터, 버튼, 아이콘, 박스
@@ -8,13 +8,23 @@
 .wrap {
   padding-top: 70px;
 }
+#main {
+  max-width: 1140px;
+  margin: 0 auto;
+}
 .container {
   padding: 0 $bothMargin;
 }
 .bg-gray {
   background: $gray-e;
 }
-
+.section-g {
+  text-align: left;
+  .section-tit{
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+}
 // header
 #header {
   position: fixed;
@@ -141,7 +151,7 @@
   height: 100%;
 }
 .swiper-slide {
-  height: 100vh;
+  // height: 100vh;
   text-align: center;
   font-size: 1.2857rem;
   background: lightcoral;
@@ -174,7 +184,7 @@
     color: $b;
   }
   .section-contents {
-    margin-top: 20px;
+  
   }
 }
 
@@ -246,5 +256,7 @@
 // footer
 #footer {
   margin-bottom: 200px;
-  border-top: 10px solid $b;
+  border-top: 1px solid #333;
 }
+
+@import "main", "contents";
