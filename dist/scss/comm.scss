@@ -6,7 +6,7 @@
 
 // 공통
 .wrap {
-  padding-top: 70px;
+  // padding-top: 70px;
 }
 #main {
   max-width: 1140px;
@@ -20,7 +20,7 @@
 }
 .section-g {
   text-align: left;
-  .section-tit{
+  .section-tit {
     margin-bottom: 30px;
     font-size: 28px;
   }
@@ -32,10 +32,10 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-  border-bottom: 1px solid $b;
-  background: rgba($w, 0.5);
+  backdrop-filter: blur(30px);
   // box-sizing: border-box;
   .inner {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -47,102 +47,88 @@
 #logo {
   position: relative;
   z-index: 1100;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 .util__list {
   display: flex;
-  li {
-    display: flex;
-  }
-  .btn-g,
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -70px;
+  padding-right: 90px;
+  margin-right: 10px;
+  list-style: none;
+  gap: 40px;
   a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: $headerHeight;
-    .material-icons-outlined {
-      font-size: 26px;
-    }
-    &::before {
-      font-size: 20px;
-      font-family: "Font Awesome 6 Free";
+    color: #fff;
+    top: 0;
+    right: 50px;
+    display: block;
+    left: 50px;
+    &:hover {
+      color:#333;
     }
   }
-  // .btn-search::before {
-  //   content: "\f002";
-  //   font-weight: 900;
-  // }
-  // .btn-my::before {
-  //   content: "\f007";
-  //   font-weight: 400;
-  // }
 }
 
-.gnb-wrap {
-  .input-burger {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 0;
-    opacity: 0;
-    &:checked {
-      // input이 선택 됐을 때
-      & + label {
-        .bar {
-          background: $b;
-          &:nth-child(2) {
-            transform: rotate(45deg) translate(5px, 5px);
-          }
-          &:nth-child(3) {
-            opacity: 0;
-          }
-          &:nth-child(4) {
-            transform: rotate(-45deg) translate(5px, -5px);
-          }
-        }
-      }
-      & ~ #gnb {
-        right: 0;
-      }
-    }
-  }
-  .label-burger {
-    position: relative;
-    z-index: 1100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 40px;
-    height: $headerHeight;
-    cursor: pointer;
-    .bar {
-      display: block;
-      width: 26px;
-      height: 2px;
-      background: $b;
-      transition: all 0.3s;
-    }
-    span {
-      &:nth-child(3) {
-        margin: 5px 0;
-      }
-    }
-  }
-  #gnb {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    bottom: 0;
-    width: 100%;
-    padding: 50px;
-    background: $prim1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s;
-  }
+// NAV
+.dropdownmenu {
+  display: block;
+  margin: 5px auto;
+}
+.dropdownmenu li {
+  padding: 0;
+}
+.dropdownmenu .depth1 {
+  justify-content: center;
+  display: flex;
+  list-style: none;
+  width: 100%;
+}
+.dropdownmenu li {
+  position: relative;
+  width: auto;
+}
+.dropdownmenu a {
+  color: #fff;
+  display: block;
+  font-size: 14px;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.dropdownmenu li:hover a {
+  background: lightgray;
+}
+.depth2 {
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 35px;
+  visibility: hidden;
+  z-index: 1;
+}
+li:hover ul.depth2 {
+  opacity: 1;
+  top: 40px; /* adjust this as per top nav padding top & bottom comes */
+  visibility: visible;
+}
+.depth2 li {
+  float: none;
+  width: 100%;
+}
+.depth2 a:hover {
+  background: #afafae;
+}
+.depth2 a {
+  background: rgba($w, 0.5);
 }
 
 // slide
@@ -154,19 +140,18 @@
   // height: 100vh;
   text-align: center;
   font-size: 1.2857rem;
-  background: lightcoral;
+  // background: lightcoral;
   display: flex;
   justify-content: center;
   align-items: center;
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba($b, 0.5);
-  }
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  // }
   img {
     display: block;
     width: 100%;
@@ -182,9 +167,6 @@
   .section-tit {
     font-size: 1.4286rem;
     color: $b;
-  }
-  .section-contents {
-  
   }
 }
 
@@ -255,8 +237,10 @@
 
 // footer
 #footer {
+  color: #333;
   margin-bottom: 200px;
   border-top: 1px solid #333;
+  list-style: none;
 }
 
 @import "main", "contents";

@@ -11,3 +11,18 @@ var swiper = new Swiper(".slide-intro", {
     prevEl: ".swiper-button-prev",
   },
 });
+var swiper = new Swiper(".slide-contents", {
+  slidesPerView: 4,
+  spaceBetween: 30,
+  loop: true,
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    hide: false,
+  },
+});
+// var swiper = new Swiper(".swiper-slide", {
+//   scrollbar: {
+//     el: ".swiper-scrollbar",
+//     hide: true,
+//   },
+// });
