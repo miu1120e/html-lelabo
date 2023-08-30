@@ -304,6 +304,33 @@ legend {
   font-size: 28px;
 }
 
+.img-zoom .thumb {
+  overflow: hidden;
+  position: relative;
+}
+.img-zoom .thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+}
+.img-zoom a:hover img {
+  transform: scale(1.02);
+}
+.img-zoom a:hover .thumb::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: inherit;
+  background-color: rgba(0, 0, 0, 0.03);
+  transform: translateZ(0);
+  perspective: 1px;
+}
+
 #header {
   position: fixed;
   top: 0;
@@ -359,6 +386,7 @@ legend {
 }
 
 .dropdownmenu li {
+  width: 100%;
   padding: 0;
 }
 
@@ -371,10 +399,10 @@ legend {
 
 .dropdownmenu li {
   position: relative;
-  width: auto;
 }
 
 .dropdownmenu a {
+  width: 100%;
   color: #fff;
   display: block;
   font-size: 14px;
@@ -385,10 +413,12 @@ legend {
 }
 
 .dropdownmenu li:hover a {
-  background: lightgray;
+  background: #666;
+  width: 100%;
 }
 
 .depth2 {
+  width: 100%;
   left: 0;
   opacity: 0;
   position: absolute;
@@ -409,7 +439,7 @@ li:hover ul.depth2 {
 }
 
 .depth2 a:hover {
-  background: #afafae;
+  background: #c3c3c2;
 }
 
 .depth2 a {
@@ -512,6 +542,15 @@ li:hover ul.depth2 {
   margin-bottom: 200px;
   border-top: 1px solid #333;
   list-style: none;
+}
+
+.inner a {
+  display: block;
+  color: #333;
+  font-size: 14px;
+  top: 0;
+  left: 0;
+  line-height: 14px;
 }
 
 .logo {
@@ -641,6 +680,9 @@ li:hover ul.depth2 {
 .event1 {
   position: relative;
 }
+.event1 img {
+  filter: grayscale(30%);
+}
 
 .contents-txt {
   position: absolute;
@@ -702,32 +744,26 @@ li:hover ul.depth2 {
 
 .list-body {
   display: flex;
-  margin: 0 -10px;
 }
-.list-body img {
+.list-body .thumb {
   display: block;
-  width: 100%;
+  position: relative;
   margin-bottom: 20px;
   -o-object-fit: contain;
      object-fit: contain;
 }
 .list-body li {
   display: block;
-  width: 100%;
   position: relative;
   padding: 10px;
 }
-.list-body li a {
-  display: block;
-}
-.list-body li a:hover img {
-  transform: scale(1.02);
-}
-.list-body li strong {
+.list-body strong {
+  color: #333;
   min-height: auto;
   font-size: 19px;
 }
-.list-body li p {
+.list-body p {
+  color: #333;
   display: flex;
   font-size: 16px;
   padding-bottom: 10px;
@@ -801,9 +837,11 @@ li:hover ul.depth2 {
 
 .list-grooming {
   display: flex;
-  margin: 0 -10px;
 }
 .list-grooming img {
+  display: block;
+}
+.list-grooming .thumb {
   display: block;
   width: 100%;
   margin-bottom: 20px;
@@ -816,17 +854,13 @@ li:hover ul.depth2 {
   position: relative;
   padding: 10px;
 }
-.list-grooming li a {
-  display: block;
-}
-.list-grooming li a:hover img {
-  transform: scale(1.02);
-}
-.list-grooming li strong {
+.list-grooming strong {
+  color: #333;
   min-height: auto;
   font-size: 19px;
 }
-.list-grooming li p {
+.list-grooming p {
+  color: #333;
   display: flex;
   font-size: 16px;
   padding-bottom: 10px;
@@ -834,9 +868,11 @@ li:hover ul.depth2 {
 
 .list-service {
   display: flex;
-  margin: 0 -10px;
 }
 .list-service img {
+  display: block;
+}
+.list-service .thumb {
   display: block;
   width: 100%;
   margin-bottom: 20px;
@@ -849,18 +885,14 @@ li:hover ul.depth2 {
   position: relative;
   padding: 10px;
 }
-.list-service li a {
-  display: block;
-}
-.list-service li a:hover img {
-  transform: scale(1.02);
-}
-.list-service li strong {
+.list-service strong {
+  color: #333;
   min-height: auto;
   font-size: 16px;
   margin-bottom: 20px;
 }
-.list-service li p {
+.list-service p {
+  color: #333;
   display: flex;
   font-size: 14px;
   padding-bottom: 10px;

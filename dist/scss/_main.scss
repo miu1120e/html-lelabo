@@ -160,7 +160,11 @@
 }
 .event1 {
   position: relative;
+  img {
+    filter: grayscale(30%);
+  }
 }
+
 .contents-txt {
   position: absolute;
   top: 50%;
@@ -215,41 +219,32 @@
 }
 .list-body {
   display: flex;
-  margin: 0 -10px;
 
-  img {
+  .thumb {
     display: block;
-    width: 100%;
+    position: relative;
     margin-bottom: 20px;
     object-fit: contain;
   }
   li {
     display: block;
-    width: 100%;
+    // width: 100%;
     position: relative;
     padding: 10px;
-
-    a {
-      display: block;
-
-      &:hover {
-        img {
-          transform: scale(1.02);
-        }
-      }
-    }
-
-    strong {
-      min-height: auto;
-      font-size: 19px;
-    }
-    p {
-      display: flex;
-      font-size: 16px;
-      padding-bottom: 10px;
-    }
+  }
+  strong {
+    color: #333;
+    min-height: auto;
+    font-size: 19px;
+  }
+  p {
+    color: #333;
+    display: flex;
+    font-size: 16px;
+    padding-bottom: 10px;
   }
 }
+
 .section-perfume {
   display: flex;
   align-items: center;
@@ -320,12 +315,12 @@
   }
 }
 
-
 .list-grooming {
   display: flex;
-  margin: 0 -10px;
-
   img {
+    display: block;
+  }
+  .thumb {
     display: block;
     width: 100%;
     margin-bottom: 20px;
@@ -336,33 +331,26 @@
     width: 100%;
     position: relative;
     padding: 10px;
-    a {
-      display: block;
-
-      &:hover {
-        img {
-          transform: scale(1.02);
-        }
-      }
-    }
-
-    strong {
-      min-height: auto;
-      font-size: 19px;
-    }
-    p {
-      display: flex;
-      font-size: 16px;
-      padding-bottom: 10px;
-    }
+  }
+  strong {
+    color: #333;
+    min-height: auto;
+    font-size: 19px;
+  }
+  p {
+    color: #333;
+    display: flex;
+    font-size: 16px;
+    padding-bottom: 10px;
   }
 }
 
 .list-service {
   display: flex;
-  margin: 0 -10px;
-
   img {
+    display: block;
+  }
+  .thumb {
     display: block;
     width: 100%;
     margin-bottom: 20px;
@@ -373,25 +361,18 @@
     width: 100%;
     position: relative;
     padding: 10px;
-    a {
-      display: block;
+  }
 
-      &:hover {
-        img {
-          transform: scale(1.02);
-        }
-      }
-    }
-
-    strong {
-      min-height: auto;
-      font-size: 16px;
-      margin-bottom: 20px;
-    }
-    p {
-      display: flex;
-      font-size: 14px;
-      padding-bottom: 10px;
-    }
+  strong {
+    color: #333;
+    min-height: auto;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  p {
+    color: #333;
+    display: flex;
+    font-size: 14px;
+    padding-bottom: 10px;
   }
 }
