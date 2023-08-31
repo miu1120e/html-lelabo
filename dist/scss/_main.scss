@@ -1,6 +1,6 @@
 .logo {
   display: flex;
-  margin: 0auto;
+  margin: 0 auto;
 }
 
 // main slide top
@@ -36,44 +36,6 @@
         color: $w;
         font-size: 20px;
       }
-      // a {
-      //   position: relative;
-      //   display: block;
-      //   width: 291px;
-      //   height: 46px;
-      //   padding: 0 20px;
-      //   color: $w;
-      //   font-size: 14px;
-      //   border: 1px solid rgba($w, 0.5);
-      //   background: #000;
-      //   line-height: 42px;
-      //   text-align: center;
-      //   transition: all 0.3s ease;
-      //   overflow: hidden;
-      //   &::after {
-      //     position: absolute;
-      //     content: " ";
-      //     top: 0;
-      //     left: 0;
-      //     z-index: -1;
-      //     width: 100%;
-      //     height: 100%;
-      //     transition: all 0.3s ease;
-      //     -webkit-transform: scale(0.1);
-      //     transform: scale(0.1);
-      //   }
-      //   &:hover {
-      //     background: #fff;
-      //     color: #000;
-      //     &::after {
-      //       content: "";
-      //       color: #000;
-      //       background: #fff;
-      //       -webkit-transform: scale(1);
-      //       transform: scale(1);
-      //     }
-      //   }
-      // }
     }
   }
 }

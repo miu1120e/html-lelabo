@@ -315,7 +315,7 @@ legend {
   transition: all 0.3s;
 }
 .img-zoom a:hover img {
-  transform: scale(1.02);
+  transform: scale(1.04);
 }
 .img-zoom a:hover .thumb::after {
   position: absolute;
@@ -405,8 +405,8 @@ legend {
   width: 100%;
   color: #fff;
   display: block;
-  font-size: 14px;
-  padding: 10px 30px;
+  font-size: 13px;
+  padding: 10px 10px;
   text-align: center;
   text-decoration: none;
   transition: all 0.25s ease;
@@ -555,7 +555,7 @@ li:hover ul.depth2 {
 
 .logo {
   display: flex;
-  margin: 0auto;
+  margin: 0 auto;
 }
 
 .slide-intro {
@@ -898,6 +898,107 @@ li:hover ul.depth2 {
   padding-bottom: 10px;
 }
 
-.contents {
-  height: 300px;
+.list-header {
+  background: #fff;
+  width: 1440px;
+  height: 473px;
+}
+
+list-text {
+  display: flex;
+  width: 682px;
+  height: 143px;
+}
+
+.list-fragrance {
+  display: flex;
+}
+.list-fragrance img {
+  display: block;
+}
+.list-fragrance .thumb {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.list-fragrance li {
+  display: block;
+  width: 100%;
+  position: relative;
+  padding: 10px;
+}
+.list-fragrance strong {
+  color: #333;
+  min-height: auto;
+  font-size: 19px;
+}
+.list-fragrance p {
+  color: #333;
+  display: flex;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+.list-body {
+  display: flex;
+}
+.list-body img {
+  display: block;
+}
+.list-body .thumb {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.list-body li {
+  display: block;
+  width: 100%;
+  position: relative;
+  padding: 10px;
+}
+.list-body strong {
+  color: #333;
+  min-height: auto;
+  font-size: 19px;
+}
+.list-body p {
+  color: #333;
+  display: flex;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+.list-candle {
+  display: flex;
+}
+.list-candle img {
+  display: block;
+}
+.list-candle .thumb {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.list-candle li {
+  display: block;
+  width: 100%;
+  position: relative;
+  padding: 10px;
+}
+.list-candle strong {
+  color: #333;
+  min-height: auto;
+  font-size: 19px;
+}
+.list-candle p {
+  color: #333;
+  display: flex;
+  font-size: 16px;
+  padding-bottom: 10px;
 }/*# sourceMappingURL=comm.css.map */

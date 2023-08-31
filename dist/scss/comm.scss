@@ -41,7 +41,7 @@
   a {
     &:hover {
       img {
-        transform: scale(1.02);
+        transform: scale(1.04);
       }
       .thumb::after {
         position: absolute;
@@ -130,8 +130,8 @@
   width: 100%;
   color: #fff;
   display: block;
-  font-size: 14px;
-  padding: 10px 30px;
+  font-size: 13px;
+  padding: 10px 10px;
   text-align: center;
   text-decoration: none;
   -webkit-transition: all 0.25s ease;
@@ -290,5 +290,6 @@ li:hover ul.depth2 {
     line-height: 14px;
   }
 }
+
 
 @import "main", "contents";

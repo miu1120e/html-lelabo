@@ -1,3 +1,100 @@
-.contents {
-  height: 300px;
+.list-header {
+  background: #fff;
+  width: 1440px;
+  height: 473px;
+}
+list-text {
+  display: flex;
+  width: 682px;
+  height: 143px;
+}
+.list-fragrance {
+  display: flex;
+
+  img {
+    display: block;
+  }
+  .thumb {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    object-fit: contain;
+  }
+  li {
+    display: block;
+    width: 100%;
+    position: relative;
+    padding: 10px;
+  }
+  strong {
+    color: #333;
+    min-height: auto;
+    font-size: 19px;
+  }
+  p {
+    color: #333;
+    display: flex;
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+}
+.list-body {
+  display: flex;
+
+  img {
+    display: block;
+  }
+  .thumb {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    object-fit: contain;
+  }
+  li {
+    display: block;
+    width: 100%;
+    position: relative;
+    padding: 10px;
+  }
+  strong {
+    color: #333;
+    min-height: auto;
+    font-size: 19px;
+  }
+  p {
+    color: #333;
+    display: flex;
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+}
+.list-candle {
+  display: flex;
+
+  img {
+    display: block;
+  }
+  .thumb {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    object-fit: contain;
+  }
+  li {
+    display: block;
+    width: 100%;
+    position: relative;
+    padding: 10px;
+  }
+  strong {
+    color: #333;
+    min-height: auto;
+    font-size: 19px;
+  }
+  p {
+    color: #333;
+    display: flex;
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
 }
