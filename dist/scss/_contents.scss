@@ -1,16 +1,55 @@
-.list-header {
+.category-filter {
+  position: relative;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 10;
   background: #fff;
-  width: 1440px;
-  height: 473px;
+  border-top: 0.5px solid #d9d9d9;
+  border-bottom: 0.5px solid #d9d9d9;
 }
-list-text {
+.category-info {
   display: flex;
-  width: 682px;
-  height: 143px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+}
+.heading {
+  margin-bottom: 20px;
+  text-align: center;
+  .best-seller {
+    font-size: 24px;
+    font-weight: 500;
+  }
+}
+.description {
+  margin-bottom: 50px;
+  max-width: 640px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.section-tit {
+  position: relative;
+  padding: 10px;
+  font-weight: 400;
 }
 .list-fragrance {
   display: flex;
-
+  a:hover {
+    .thumb::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(29, 29, 29, 0.2);
+      z-index: 10;
+    }
+  }
   img {
     display: block;
   }
@@ -38,9 +77,62 @@ list-text {
     padding-bottom: 10px;
   }
 }
+
 .list-body {
   display: flex;
-
+  a:hover {
+    .thumb::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(29, 29, 29, 0.518);
+      z-index: 10;
+    }
+  }
+  img {
+    display: block;
+  }
+  .thumb {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    object-fit: contain;
+  }
+  li {
+    display: block;
+    width: 100%;
+    position: relative;
+    padding: 10px;
+  }
+  strong {
+    color: #333;
+    min-height: auto;
+    font-size: 19px;
+  }
+  p {
+    color: #333;
+    display: flex;
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+}
+.list-bodybar {
+  display: flex;
+  a:hover {
+    .thumb::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(29, 29, 29, 0.518);
+      z-index: 10;
+    }
+  }
   img {
     display: block;
   }
@@ -70,7 +162,18 @@ list-text {
 }
 .list-candle {
   display: flex;
-
+  a:hover {
+    .thumb::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(29, 29, 29, 0.518);
+      z-index: 10;
+    }
+  }
   img {
     display: block;
   }
@@ -97,4 +200,20 @@ list-text {
     font-size: 16px;
     padding-bottom: 10px;
   }
+}
+
+// detail페이지
+.block-cms-text {
+  max-width: 1280px;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0 auto;
+}
+.product-detail {
+  max-width: 1280px;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0 auto;
 }
