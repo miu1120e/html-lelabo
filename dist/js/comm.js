@@ -15,6 +15,10 @@ var swiper = new Swiper(".slide-contents", {
   slidesPerView: 4,
   spaceBetween: 30,
   loop: true,
+  autoplay:{
+    delay:3000,
+    disableOnInteraction: false,
+  },
   scrollbar: {
     el: ".swiper-scrollbar",
     hide: false,
