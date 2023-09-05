@@ -15,8 +15,8 @@ var swiper = new Swiper(".slide-contents", {
   slidesPerView: 4,
   spaceBetween: 30,
   loop: true,
-  autoplay:{
-    delay:3000,
+  autoplay: {
+    delay: 3000,
     disableOnInteraction: false,
   },
   scrollbar: {
@@ -30,3 +30,9 @@ var swiper = new Swiper(".slide-contents", {
 //     hide: true,
 //   },
 // });
+
+$(document).ready(function () {
+  $(".product-detail-extra-toggle").click(function () {
+    $(".product-detail-main-text").slideToggle("slow");
+  });
+});

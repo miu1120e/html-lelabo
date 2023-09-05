@@ -288,6 +288,12 @@ legend {
   margin: 0 auto;
 }
 
+.inner {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .container {
   padding: 0 4%;
 }
@@ -1120,15 +1126,6 @@ li:hover ul.depth2 {
 
 .product {
   display: flex;
-  padding: 0 60px;
-}
-
-.product-detail {
-  max-width: 1280px;
-  top: 0;
-  left: 0;
-  padding: 0;
-  margin: 0 auto;
 }
 
 .product-gallery {
@@ -1144,10 +1141,6 @@ li:hover ul.depth2 {
   color: #404040;
 }
 
-.product-gallery-content {
-  width: 50%;
-}
-
 .product-gallery-foot {
   display: inline-block;
   vertical-align: middle;
@@ -1160,7 +1153,6 @@ li:hover ul.depth2 {
 }
 
 .product-info-content {
-  padding-top: 104px;
   bottom: 0;
   align-self: flex-end;
 }
@@ -1178,10 +1170,12 @@ li:hover ul.depth2 {
   margin-bottom: 15px;
 }
 
-.block {
+.block1 {
+  display: block;
   font-size: 24px;
-  text-transform: none;
-  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 120%;
 }
 
 .block2 {
@@ -1202,41 +1196,87 @@ li:hover ul.depth2 {
 .product-subtitle {
   margin-bottom: 15px;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 145%;
-  color: #5f5f5f;
+  color: #898989;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .product-description {
+  padding: 20px 0;
   position: relative;
   font-size: 14px;
   vertical-align: inherit;
   line-height: normal;
-  width: 405px;
+}
+
+.product-gallery-content img {
+  width: 100%;
+}
+
+.product-detail-extra {
+  padding: 5px;
+  border-top: 1px solid #e7e7e7;
+}
+
+.product-detail-extra-title {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.02e;
+}
+
+.product-detail-thumb {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-link product-detail-extra-toggle {
+  border: 0 none;
+  background: none;
+  text-decoration: underline;
+  letter-spacing: 0.02em;
+  color: #404040;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: norma;
+  font-size: 10px;
+}
+
+.product-detail-extra-toggle {
+  font-size: 14px;
+}
+
+.product-detail-main-text {
+  display: none;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
 }
 
 .title {
   font-weight: 500;
   font-size: 18px;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 .product-c {
   display: flex;
+  justify-content: space-between;
 }
 
 .product-card {
   flex-direction: column;
   display: flex;
   height: 100%;
+  width: 31%;
+}
+.product-card img {
   width: 100%;
 }
-
-.card-txt {
+.product-card .card-txt {
   font-size: 12px;
-  text-align: center;
-  margin: -10px;
 }
 
 .discover {
@@ -1249,18 +1289,22 @@ li:hover ul.depth2 {
 
 .addtocart {
   margin-top: 8px;
-  width: 405px;
-  height: 46px;
-  line-height: 42px;
+}
+.addtocart p {
   text-align: center;
 }
 .addtocart .btn-13 {
   display: block;
   position: relative;
+  height: 42px;
+  width: 100%;
+  line-height: 42px;
+  text-align: center;
   background: #000;
   font-size: 14px;
   color: #fff;
   z-index: 1;
+  border: 1px solid transparent;
 }
 .addtocart .btn-13:after {
   position: absolute;
@@ -1285,41 +1329,56 @@ li:hover ul.depth2 {
   top: 1px;
 }
 
-.product-detail-extra {
-  border-top: 1px solid #e7e7e7;
+.gallery-thumb {
+  margin: 0 auto;
+  position: relative;
+  max-width: 800px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.gallery-thumb img {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
 }
 
-.product-detail-extrahead {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-column-gap: 6px;
+.list-like {
   justify-content: space-between;
+  position: relative;
+  display: flex;
+}
+.list-like img {
+  width: 100%;
+  display: block;
+}
+.list-like .thumb {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.list-like li {
+  display: block;
+  width: 24%;
+  position: relative;
+}
+.list-like strong {
+  color: #333;
+  min-height: auto;
+  font-size: 19px;
+}
+.list-like p {
+  color: #333;
+  display: flex;
+  font-size: 16px;
+  padding-bottom: 10px;
 }
 
-.product-detail-extratitle {
-  font-family: "Noto Sans", sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.02e;
-}
-
-.btn-link product-details-extra-toggle {
-  border: 0 none;
-  background: none;
-  text-decoration: underline;
-  letter-spacing: 0.02em;
-  color: #404040;
-  font-family: "Noto Sans", sans-serif;
-  font-weight: norma;
-  font-size: 10px;
-}
-
-.product-detail-extrabody {
-  padding: 0;
-  margin: 0;
-  outline: 0;
-  box-sizing: border-box;
-}
-
-.product-detail-main-text {
-  font-size: 12px;
+@media screen and (max-width: 1280px) {
+  .product {
+    display: block;
+  }
 }/*# sourceMappingURL=comm.css.map */
