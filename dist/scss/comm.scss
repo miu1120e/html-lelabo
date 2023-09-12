@@ -179,6 +179,14 @@ li:hover ul.depth2 {
   background: rgba($w, 0.5);
 }
 
+// media screen
+
+@media screen and (max-height: 300px) {
+	ul {
+		margin-top: 40px;
+	}
+}
+
 // slide
 .swiper {
   width: 100%;
@@ -217,6 +225,7 @@ li:hover ul.depth2 {
     color: $b;
   }
 }
+
 
 // 이미지 게시판 2단
 .lst-thumb-two-column {
