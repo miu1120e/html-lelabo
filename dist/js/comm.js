@@ -131,3 +131,5 @@ $(function () {
     x: "-30vw",
   });
 });
+
+AOS.init();

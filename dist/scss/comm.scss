@@ -42,6 +42,7 @@
     overflow: hidden;
     position: relative;
     img {
+      padding: 5px;
       display: block;
       width: 100%;
       height: 100%;
@@ -182,10 +183,53 @@ li:hover ul.depth2 {
 // media screen
 
 @media screen and (max-height: 300px) {
-	ul {
-		margin-top: 40px;
-	}
+  ul {
+    margin-top: 40px;
+  }
 }
+
+// desktop
+// width 1440px 이하일 경우
+// @media screen and (max-width: 1440px) {
+//   body {
+//     background-color: blue;
+//   }
+// }
+// macbook air
+// width 1280px 이하일 경우
+// @media screen and (max-width: 1280px) {
+//   body {
+//     background-color: lightcoral;
+//   }
+// }
+// tablet 가로
+// *** width 1024px 이하일 경우
+// @media screen and (max-width: 1024px) {
+//   body {
+//     background-color: greenyellow;
+//   }
+// }
+// tablet 세로, mobile 가로
+// width 744px 이하일 경우 (mobile)
+// @media screen and (max-width: 744px) {
+//   body {
+//     background-color: blueviolet;
+//   }
+// }
+// mobile
+// *** width 428px 이하일 경우 (mobile)
+// @media screen and (max-width: 428px) {
+//   body {
+//     background-color: red;
+//   }
+// }
+// mobile iphone mini
+// width 360px 이하일 경우
+// @media screen and (max-width: 360px) {
+//   body {
+//     background-color: yellow;
+//   }
+// }
 
 // slide
 .swiper {
@@ -225,7 +269,6 @@ li:hover ul.depth2 {
     color: $b;
   }
 }
-
 
 // 이미지 게시판 2단
 .lst-thumb-two-column {
@@ -309,6 +352,5 @@ li:hover ul.depth2 {
     line-height: 14px;
   }
 }
-
 
 @import "main", "contents";
