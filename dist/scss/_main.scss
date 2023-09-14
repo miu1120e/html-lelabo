@@ -115,7 +115,7 @@
   height: 100%;
   width: 100%;
   position: relative;
-  background: var(--swiper-scrollbar-drag-bg-color, rgba(0, 0, 0, 0.2));
+  background: var(--swiper-scrollbar-drag-bg-color, rgba(0, 0, 0, 0.575));
   border-radius: var(--swiper-scrollbar-border-radius, 10px);
   left: 0;
   top: 0;
@@ -128,7 +128,7 @@
     filter: grayscale(30%);
   }
 }
-.event1{
+.event1 {
   position: relative;
 }
 .contents-txt {
@@ -243,6 +243,9 @@
       text-align: center;
     }
   }
+  .like-perfume {
+    padding: 10px;
+  }
   .btn-13 {
     display: block;
     position: relative;
@@ -342,4 +345,130 @@
     padding-bottom: 10px;
   }
 }
-// add
+// tablet 가로
+// *** width 1024px 이하일 경우
+// lelabo-main
+@media screen and (max-width: 1024px) {
+  .dropdownmenu a {
+    width: 100%;
+    color: #fff;
+    display: block;
+    font-size: 12px;
+    padding: 8px 8px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.25s ease;
+  }
+  .slide-intro .swiper-slide .swiper-slide__txt strong {
+    color: #fff;
+    font-size: 26px;
+  }
+  .slide-intro .swiper-slide .swiper-slide__txt p {
+    margin: 20px 0;
+    color: #fff;
+    font-size: 18px;
+  }
+  .btn-10 {
+    display: block;
+    position: relative;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 255px;
+    height: 36px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 35px;
+  }
+  .section-g .section-tit {
+    font-size: 20px;
+    color: #000;
+  }
+  .like {
+    padding: 10px;
+  }
+  .slide-item-txt strong {
+    min-height: auto;
+    font-size: 17px;
+  }
+  .slide-item-txt p {
+    display: flex;
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+  .section-perfume .txt-shopping-tit {
+    font-size: 30px;
+  }
+  .section-perfume .txt-shopping-desc {
+    font-size: 14px;
+  }
+  .section-perfume .like .discover {
+    margin-top: 30px;
+    width: 265px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+  }
+}
+
+// mobile
+// *** width 428px 이하일 경우 (mobile)
+// lelabo-main
+@media screen and (max-width: 428px) {
+  .like {
+    padding: 10px;
+  }
+  .slide-intro {
+    height: 500px;
+  }
+  .slide-intro .swiper-slide .swiper-slide__txt {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    text-align: left;
+    z-index: 1;
+    width: 56%;
+    transform: translate(-50%, -50%);
+  }
+  .slide-intro .swiper-slide .swiper-slide__txt strong {
+    color: #fff;
+    font-size: 23px;
+  }
+  .slide-intro .swiper-slide .swiper-slide__txt p {
+    margin: 20px 0;
+    color: #fff;
+    font-size: 15px;
+  }
+  .btn-10 {
+    display: block;
+    position: relative;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 235px;
+    height: 30px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 30px;
+  }
+  .section-perfume .txt-shopping-tit {
+    font-size: 24px;
+}   
+  .section-perfume .txt-shopping-desc {
+    font-size: 13px;
+  }
+  .list-grooming {
+    padding: 0 5px;
+}
+  .product-item {
+    width: 48%;
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 1.3;
+  }
+}
+
