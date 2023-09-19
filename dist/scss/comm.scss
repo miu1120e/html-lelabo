@@ -9,13 +9,17 @@
   padding-top: 70px;
 }
 #main {
-  max-width: 1140px;
-  margin: 0 auto;
+  background: #eee;
 }
 .inner {
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
+}
+@media screen and (max-width: 1024px) {
+  .inner {
+    padding: 0 30px;
+  }
 }
 .container {
   padding: 0 $bothMargin;
@@ -33,7 +37,7 @@
 .section-tit {
   font-size: 1.4286rem;
   color: #000;
-  padding: 10px;
+  padding: 10px 0;
 }
 
 // 이미지 줌 박스
@@ -42,7 +46,6 @@
     overflow: hidden;
     position: relative;
     img {
-      padding: 5px;
       display: block;
       width: 100%;
       height: 100%;
@@ -338,11 +341,10 @@ li:hover ul.depth2 {
 // footer
 #footer {
   color: #333;
-  margin-bottom: 200px;
+  padding: 14px;
   border-top: 1px solid #333;
   list-style: none;
-}
-.inner {
+
   a {
     display: block;
     color: #333;
@@ -350,6 +352,12 @@ li:hover ul.depth2 {
     top: 0;
     left: 0;
     line-height: 14px;
+  }
+  .footer-inner {
+    padding: 20px 0;
+  }
+  .footer-secondary {
+    padding: 20px 0;
   }
 }
 

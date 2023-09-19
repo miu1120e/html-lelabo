@@ -34,7 +34,6 @@
 
 .section-tit {
   position: relative;
-  padding: 10px;
   font-weight: 400;
 }
 .list-fragrance {
@@ -81,6 +80,7 @@
 
 .list-body {
   display: flex;
+  justify-content: space-between;
   a:hover {
     .thumb::before {
       position: absolute;
@@ -104,9 +104,11 @@
   }
   li {
     display: block;
-    width: 100%;
+    width: 24%;
     position: relative;
-    padding: 10px;
+  }
+  .txt {
+    padding-bottom: 20px;
   }
   strong {
     color: #333;
@@ -118,6 +120,18 @@
     display: flex;
     font-size: 16px;
     padding-bottom: 10px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .list-body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .list-body li {
+    display: block;
+    width: 49%;
+    position: relative;
   }
 }
 .list-bodybar {
@@ -526,91 +540,87 @@
 // mobile
 // *** width 428px 이하일 경우 (mobile)
 // lelabo-detail
-@media screen and (max-width: 428px) {
-  .product-gallery-content img {
-    width: 100%;
-    height: 100%;
-  }
-  .product-gallery-foot {
-    font-weight: 500;
-    padding: 10px;
-    font-size: 14px;
-    width: 100%;
-  }
-  .product-info {
-    margin: 0;
-    padding: 10px;
-  }
-  .product-name {
-    font-weight: 400;
-    font-size: 20px;
-    color: #333;
-    line-height: 120%;
-  }
-  .product-info {
-    margin: 0;
-    padding: 10px;
-  }
-  .product-price {
-    font-size: 14px;
-  }
-  .block1 {
-    display: block;
-    font-size: 18px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    line-height: 120%;
-  }
-  .gallery-thumb img {
-    width: 100%;
-    height: 100%;
-    padding: 0;
-  }
-  .gallery-thumb {
-    margin: 0 auto;
-    position: relative;
-    max-width: 300px;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-  .product-gallery {
-    margin: 0;
-    padding-right: 0;
-  }
-  .list-like .like-txt strong {
-    display: block;
-    color: #333;
-    font-size: 14px;
-    padding-bottom: 10px;
-  }
-  p {
-    display: block;
-    color: #333;
-    display: flex;
-    font-size: 12px;
-    padding-bottom: 12px;
-  }
-  .list-like {
-    color: #333;
-    font-size: 14px;
-    top: 0;
-    left: 0;
-    line-height: 14px;
-    padding: 5px;
-  }
-  .section-g .section-tit {
-    font-size: 18px;
-  }
-}
+// @media screen and (max-width: 428px) {
+//   .product-gallery-content img {
+//     width: 100%;
+//     height: 100%;
+//   }
+//   .product-gallery-foot {
+//     font-weight: 500;
+//     padding: 10px;
+//     font-size: 14px;
+//     width: 100%;
+//   }
+//   .product-info {
+//     margin: 0;
+//     padding: 10px;
+//   }
+//   .product-name {
+//     font-weight: 400;
+//     font-size: 20px;
+//     color: #333;
+//     line-height: 120%;
+//   }
+//   .product-info {
+//     margin: 0;
+//     padding: 10px;
+//   }
+//   .product-price {
+//     font-size: 14px;
+//   }
+//   .block1 {
+//     display: block;
+//     font-size: 18px;
+//     margin-top: 15px;
+//     margin-bottom: 15px;
+//     line-height: 120%;
+//   }
+//   .gallery-thumb img {
+//     width: 100%;
+//     height: 100%;
+//     padding: 0;
+//   }
+//   .gallery-thumb {
+//     margin: 0 auto;
+//     position: relative;
+//     max-width: 300px;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+//   }
+//   .product-gallery {
+//     margin: 0;
+//     padding-right: 0;
+//   }
+//   .list-like .like-txt strong {
+//     display: block;
+//     color: #333;
+//     font-size: 14px;
+//     padding-bottom: 10px;
+//   }
+//   p {
+//     display: block;
+//     color: #333;
+//     display: flex;
+//     font-size: 12px;
+//     padding-bottom: 12px;
+//   }
+//   .list-like {
+//     color: #333;
+//     font-size: 14px;
+//     top: 0;
+//     left: 0;
+//     line-height: 14px;
+//     padding: 5px;
+//   }
+//   .section-g .section-tit {
+//     font-size: 18px;
+//   }
+// }
 
 // event페이지
-#main {
-  font-weight: 500;
-  max-width: 1140px;
-  margin: 0 auto;
-}
+
 .category-filter {
   position: relative;
   padding-right: 20px;
@@ -674,6 +684,8 @@
 }
 .list-service {
   display: flex;
+  justify-content: space-between;
+  padding: 0px 5px;
   img {
     display: block;
   }
@@ -685,9 +697,8 @@
   }
   li {
     display: block;
-    width: 100%;
+    width: 49%;
     position: relative;
-    padding: 10px;
   }
 
   strong {
@@ -704,13 +715,15 @@
   }
 }
 .section-g {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  overflow: hidden;
   .section-tit {
     font-size: 20px;
     color: $b;
   }
   img {
+    width: 100%;
+    height: 100%;
+    display: block;
     filter: grayscale(30%);
   }
 }

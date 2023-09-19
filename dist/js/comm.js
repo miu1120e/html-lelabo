@@ -12,7 +12,7 @@ var swiper = new Swiper(".slide-intro", {
   },
 });
 var swiper = new Swiper(".slide-contents", {
-  slidesPerView: 4,
+  slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
   autoplay: {
@@ -22,6 +22,20 @@ var swiper = new Swiper(".slide-contents", {
   scrollbar: {
     el: ".swiper-scrollbar",
     hide: false,
+  },
+  breakpoints: {
+    428: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    744: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 50,
+    },
   },
 });
 // var swiper = new Swiper(".swiper-slide", {
