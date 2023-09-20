@@ -65,12 +65,111 @@
     </div>
     <div class="wrap">
       <!-- logo 왼쪽 type -->
-      <header data-include-path="./outline/header.html"></header>
+      <header id="header" class="container">
+        <div class="inner">
+          <h1 id="logo">
+            <a href="#">
+              <img src="../images/lelabo.png" alt="#">
+            </a>
+          </h1>
+          <div class="header__right">
+            <div class="util">
+              <ul class="util__list">
+      
+                  <!-- a : 링크 연결 / button : 동작처리 -->
+                  <!-- 링크 연결 없이 스크립트 처리 -->
+                <li>
+                  <a href="javascript:void(0)">MYPAGE</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">LOGIN</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <nav class="dropdownmenu">
+          <h2 class="blind">전체메뉴</h2>
+           <ul class="depth1">
+              <li><a href="#">FRAGRANCES</a>
+                <ul class="depth2">
+                  <li><a href="#">EXCLUSIVE</a></li>
+                  <li><a href="#">DISCOVERY</a></li>
+                  <li><a href="#">GAIAC10</a></li>
+                  <li><a href="#">VANILLE 44</a></li>
+                  <li><a href="#">CEFRAT 37</a></li>
+                  <li><a href="#">MYRRHE 55</a></li>
+                  <li><a href="#">TABAC 28</a></li>
+                  <li><a href="#">MOUSSE DE SHENE 30</a></li>
+                </ul>
+              </li>
+              <li><a href="#">BEST SELLER</a>
+                <ul class="depth2">
+                  <li><a href="#">MUSK 25</a></li>
+                  <li><a href="#">TUBEREUSE 40</a></li>
+                  <li><a href="#">BIGARADE 18</a></li>
+                  <li><a href="#">POIVRE 23</a></li>
+                  <li><a href="#">BAIL ROSE 26</a></li>
+                  <li><a href="#">ALDEHYDE 44</a></li>
+                  <li><a href="#">LIMETTE 37</a></li>
+                  <li><a href="#">CUIR 28</a></li>
+                </ul>
+              </li>
+              <li><a href="#">BODY&HAIR&FACE</a>
+                <ul class="depth2">
+                  <li><a href="#">HAND SOAP</a></li>
+                  <li><a href="#">HAND LOTION</a></li>
+                  <li><a href="#">HAND POMAD</a></li>
+                  <li><a href="#">SHOWER GEL</a></li>
+                  <li><a href="#">SHAMPOO</a></li>
+                  <li><a href="#">CONDITIONER</a></li>
+                  <li><a href="#">LAURIER 62</a></li>
+                  <li><a href="#">BODYCREAM</a></li>
+                </ul>
+              </li>
+              <li><a href="#">GROOMING</a>
+                <ul class="depth2">
+                  <li><a href="#"> NEROLI 36</a></li>
+                  <li><a href="#">YLANG 49</a></li>
+                  <li><a href="#">FLEUR DORANGER 27</a></li>
+                  <li><a href="#">PATCHOULI 24</a></li>
+                  <li><a href="#">LABDANUM 18</a></li>
+                  <li><a href="#">JASMIN 17</a></li>
+                  <li><a href="#">VETIVER 46</a></li>
+                  <li><a href="#">AMBRETTE 9</a></li>
+              </ul>
+              </li>
+              <li><a href="#">CLASSIC CANDLE</a>
+                <ul class="depth2">
+                  <li><a href="#">AMBROXYDE 17</a></li>
+                  <li><a href="#">SANTAL 26</a></li>
+                  <li><a href="#">ENCENS 9</a></li>
+                  <li><a href="#">PALO SANTO 14</a></li>
+                  <li><a href="#">CALONE 17</a></li>
+                  <li><a href="#">FIGUE 15</a></li>
+                  <li><a href="#">TABAC 28</a></li>
+                  <li><a href="#">PETIT GRAIN 21</a></li>
+                  </ul>
+                </li>
+              <li><a href="#">LELABO</a>
+                <ul class="depth2">
+                  <li><a href="#">MANYPESTO</a></li>
+                  <li><a href="#">LELABO LAB</a></li>
+                  <li><a href="#">COMMUNITY</a></li>
+                  <li><a href="#">SOUL</a></li>
+                  <li><a href="#">COLLECTION</a></li>
+                  <li><a href="#">INGREDIANTS</a></li>
+                  <li><a href="#">BRAND ESTABLISHMENT</a></li>
+                  <li><a href="#">MOUSSE DE SHENE 30</a></li>
+                </ul>
+              </li> 
+            </ul>
+        </nav>
+      </header>
       <div class="swiper slide-g slide-intro">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="./images/lelabo-main.png" alt="main1">
-            
+            <img src="./images/lelabo-main.png" alt="main1">            
             <div class="swiper-slide__txt">
               <strong>FINE FRAGRANCES
                 <br>
@@ -426,8 +525,27 @@
     <!-- add -->
 
       </main>
-      <footer data-include-path="./outline/footer.html">
-
+      <footer id="footer" class="container">
+        <div class="inner">
+          <div class="footer-header">
+            <h1>About LELABO</h1>
+          </div>
+          <div class="footer-inner">
+            <a href="#">Track your order</a><br>
+            <a href="#">Shipping & Delivery</a><br>
+            <a href="#">Return an item</a><br>
+            <a href="#">Help Center/FAQs</a><br>
+            <a href="#">Find your nearest</a>
+            <a href="#">boutique</a>
+            <a href="#">Exclusive Offers</a>
+          </div> 
+          <div class="footer-secondary">
+            <a class="copyright">이엘씨에이한국(유) 대표: Teng, Hsiao-Hua (Catherine), 서울시 강남구 강남대로 382 (역삼동) 메리츠타워, 06232
+              사업자등록번호: 211-81-71889통신판매업신고번호: 강남-15737호</a>
+            <a href="tel: 1544-1345">고객관리지원팀: 1544-1345 conciergekr@lelabofragrances.com </a>
+            <a href="Amazon Web Services">호스팅제공자: Amazon Web Services</a>
+          </div>
+        </div>
       </footer>
   
     </div>
