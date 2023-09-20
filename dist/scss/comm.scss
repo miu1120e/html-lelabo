@@ -9,7 +9,7 @@
   padding-top: 70px;
 }
 #main {
-  background: #eee;
+  background: #fff;
 }
 .inner {
   max-width: 1280px;
@@ -190,49 +190,12 @@ li:hover ul.depth2 {
     margin-top: 40px;
   }
 }
-
-// desktop
-// width 1440px 이하일 경우
-// @media screen and (max-width: 1440px) {
-//   body {
-//     background-color: blue;
-//   }
-// }
-// macbook air
-// width 1280px 이하일 경우
-// @media screen and (max-width: 1280px) {
-//   body {
-//     background-color: lightcoral;
-//   }
-// }
-// tablet 가로
-// *** width 1024px 이하일 경우
-// @media screen and (max-width: 1024px) {
-//   body {
-//     background-color: greenyellow;
-//   }
-// }
-// tablet 세로, mobile 가로
-// width 744px 이하일 경우 (mobile)
-// @media screen and (max-width: 744px) {
-//   body {
-//     background-color: blueviolet;
-//   }
-// }
-// mobile
-// *** width 428px 이하일 경우 (mobile)
-// @media screen and (max-width: 428px) {
-//   body {
-//     background-color: red;
-//   }
-// }
-// mobile iphone mini
-// width 360px 이하일 경우
-// @media screen and (max-width: 360px) {
-//   body {
-//     background-color: yellow;
-//   }
-// }
+// 744 이하
+@media screen and (max-width: 744px) {
+  .dropdownmenu {
+    display: none;
+  }
+}
 
 // slide
 .swiper {
@@ -240,21 +203,11 @@ li:hover ul.depth2 {
   height: 100%;
 }
 .swiper-slide {
-  // height: 100vh;
   text-align: center;
   font-size: 1.2857rem;
-  // background: lightcoral;
   display: flex;
   justify-content: center;
   align-items: center;
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 100%;
-  //   height: 100%;
-  // }
   img {
     display: block;
     width: 100%;

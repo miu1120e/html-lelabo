@@ -2,13 +2,13 @@
 .category-filter {
   position: relative;
   padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-left: 20px;
   z-index: 10;
   background: #fff;
   border-top: 0.5px solid #d9d9d9;
   border-bottom: 0.5px solid #d9d9d9;
 }
+
 .category-info {
   display: flex;
   flex-direction: column;
@@ -38,6 +38,7 @@
 }
 .list-fragrance {
   display: flex;
+  justify-content: space-between;
   a:hover {
     .thumb::before {
       position: absolute;
@@ -59,11 +60,13 @@
     margin-bottom: 20px;
     object-fit: contain;
   }
+  .txt {
+    padding-bottom: 20px;
+  }
   li {
     display: block;
-    width: 100%;
+    width: 24%;
     position: relative;
-    padding: 10px;
   }
   strong {
     color: #333;
@@ -122,20 +125,10 @@
     padding-bottom: 10px;
   }
 }
-@media screen and (max-width: 1024px) {
-  .list-body {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .list-body li {
-    display: block;
-    width: 49%;
-    position: relative;
-  }
-}
+
 .list-bodybar {
   display: flex;
+  justify-content: space-between;
   a:hover {
     .thumb::before {
       position: absolute;
@@ -157,11 +150,13 @@
     margin-bottom: 20px;
     object-fit: contain;
   }
+  .txt {
+    padding-bottom: 20px;
+  }
   li {
     display: block;
-    width: 100%;
+    width: 24%;
     position: relative;
-    padding: 10px;
   }
   strong {
     color: #333;
@@ -177,6 +172,7 @@
 }
 .list-candle {
   display: flex;
+  justify-content: space-between;
   a:hover {
     .thumb::before {
       position: absolute;
@@ -198,11 +194,13 @@
     margin-bottom: 20px;
     object-fit: contain;
   }
+  .txt {
+    padding-bottom: 20px;
+  }
   li {
     display: block;
-    width: 100%;
+    width: 24%;
     position: relative;
-    padding: 10px;
   }
   strong {
     color: #333;
@@ -214,6 +212,57 @@
     display: flex;
     font-size: 16px;
     padding-bottom: 10px;
+  }
+}
+
+// 1024px이하
+@media screen and (max-width: 1024px) {
+  .list-fragrance {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .list-fragrance li {
+    display: block;
+    width: 49%;
+    position: relative;
+  }
+  .list-bodybar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .list-bodybar li {
+    display: block;
+    width: 49%;
+    position: relative;
+  }
+  .list-candle {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .list-candle li {
+    display: block;
+    width: 49%;
+    position: relative;
+  }
+
+  .list-body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .list-body li {
+    display: block;
+    width: 49%;
+    position: relative;
+  }
+}
+// 744 이하
+@media screen and (max-width: 744px) {
+  .product-info {
+    margin: 0;
   }
 }
 
@@ -247,6 +296,7 @@
   width: 100%;
 }
 .product-gallery-foot {
+  padding: 30px;
   display: inline-block;
   vertical-align: middle;
 }
@@ -443,7 +493,6 @@
   img {
     width: 100%;
     height: 100%;
-    padding: 30px;
   }
 }
 
@@ -528,96 +577,22 @@
   .gallery-thumb img {
     width: 100%;
     height: 100%;
-    padding: 10px;
   }
 
   .product-info {
     margin: 0;
-    padding: 12px;
+  }
+  .list-like {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      display: block;
+      width: 49%;
+      position: relative;
+    }
   }
 }
-
-// mobile
-// *** width 428px 이하일 경우 (mobile)
-// lelabo-detail
-// @media screen and (max-width: 428px) {
-//   .product-gallery-content img {
-//     width: 100%;
-//     height: 100%;
-//   }
-//   .product-gallery-foot {
-//     font-weight: 500;
-//     padding: 10px;
-//     font-size: 14px;
-//     width: 100%;
-//   }
-//   .product-info {
-//     margin: 0;
-//     padding: 10px;
-//   }
-//   .product-name {
-//     font-weight: 400;
-//     font-size: 20px;
-//     color: #333;
-//     line-height: 120%;
-//   }
-//   .product-info {
-//     margin: 0;
-//     padding: 10px;
-//   }
-//   .product-price {
-//     font-size: 14px;
-//   }
-//   .block1 {
-//     display: block;
-//     font-size: 18px;
-//     margin-top: 15px;
-//     margin-bottom: 15px;
-//     line-height: 120%;
-//   }
-//   .gallery-thumb img {
-//     width: 100%;
-//     height: 100%;
-//     padding: 0;
-//   }
-//   .gallery-thumb {
-//     margin: 0 auto;
-//     position: relative;
-//     max-width: 300px;
-//     top: 0;
-//     right: 0;
-//     bottom: 0;
-//     left: 0;
-//   }
-//   .product-gallery {
-//     margin: 0;
-//     padding-right: 0;
-//   }
-//   .list-like .like-txt strong {
-//     display: block;
-//     color: #333;
-//     font-size: 14px;
-//     padding-bottom: 10px;
-//   }
-//   p {
-//     display: block;
-//     color: #333;
-//     display: flex;
-//     font-size: 12px;
-//     padding-bottom: 12px;
-//   }
-//   .list-like {
-//     color: #333;
-//     font-size: 14px;
-//     top: 0;
-//     left: 0;
-//     line-height: 14px;
-//     padding: 5px;
-//   }
-//   .section-g .section-tit {
-//     font-size: 18px;
-//   }
-// }
 
 // event페이지
 
@@ -685,7 +660,6 @@
 .list-service {
   display: flex;
   justify-content: space-between;
-  padding: 0px 5px;
   img {
     display: block;
   }

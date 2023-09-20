@@ -288,7 +288,7 @@ legend {
 }
 
 #main {
-  background: #eee;
+  background: #fff;
 }
 
 .inner {
@@ -469,6 +469,11 @@ li:hover ul.depth2 {
 @media screen and (max-height: 300px) {
   ul {
     margin-top: 40px;
+  }
+}
+@media screen and (max-width: 744px) {
+  .dropdownmenu {
+    display: none;
   }
 }
 .swiper {
@@ -810,6 +815,10 @@ li:hover ul.depth2 {
   padding-bottom: 10px;
 }
 
+.list-body {
+  transition-timing-function: ease-out;
+}
+
 @media screen and (max-width: 744px) {
   .inner {
     flex-direction: column-reverse;
@@ -893,6 +902,7 @@ li:hover ul.depth2 {
 .list-grooming {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .list-grooming img {
   display: block;
@@ -988,8 +998,6 @@ li:hover ul.depth2 {
     width: 49%;
     position: relative;
   }
-}
-@media screen and (max-width: 1024px) {
   .dropdownmenu a {
     width: 100%;
     color: #fff;
@@ -1139,13 +1147,13 @@ li:hover ul.depth2 {
     left: 30%;
   }
   .slide-intro .swiper-slide .swiper-slide__txt strong {
-    font-size: 23px;
+    font-size: 20px;
   }
   .slide-intro .swiper-slide .swiper-slide__txt p {
     font-size: 15px;
   }
   .btn-10 {
-    width: 60%;
+    width: 70%;
     height: 100%;
     text-align: center;
     font-size: 10px;
@@ -1156,9 +1164,6 @@ li:hover ul.depth2 {
   .section-perfume .txt-shopping-desc {
     font-size: 13px;
   }
-  .list-grooming {
-    padding: 0 5px;
-  }
   .product-item {
     width: 48%;
     display: inline-block;
@@ -1168,15 +1173,10 @@ li:hover ul.depth2 {
     line-height: 1.3;
   }
 }
-.list-body {
-  transition-timing-function: ease-out;
-}
-
 .category-filter {
   position: relative;
   padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-left: 20px;
   z-index: 10;
   background: #fff;
   border-top: 0.5px solid #d9d9d9;
@@ -1215,6 +1215,7 @@ li:hover ul.depth2 {
 
 .list-fragrance {
   display: flex;
+  justify-content: space-between;
 }
 .list-fragrance a:hover .thumb::before {
   position: absolute;
@@ -1236,11 +1237,13 @@ li:hover ul.depth2 {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.list-fragrance .txt {
+  padding-bottom: 20px;
+}
 .list-fragrance li {
   display: block;
-  width: 100%;
+  width: 24%;
   position: relative;
-  padding: 10px;
 }
 .list-fragrance strong {
   color: #333;
@@ -1298,20 +1301,9 @@ li:hover ul.depth2 {
   padding-bottom: 10px;
 }
 
-@media screen and (max-width: 1024px) {
-  .list-body {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .list-body li {
-    display: block;
-    width: 49%;
-    position: relative;
-  }
-}
 .list-bodybar {
   display: flex;
+  justify-content: space-between;
 }
 .list-bodybar a:hover .thumb::before {
   position: absolute;
@@ -1333,11 +1325,13 @@ li:hover ul.depth2 {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.list-bodybar .txt {
+  padding-bottom: 20px;
+}
 .list-bodybar li {
   display: block;
-  width: 100%;
+  width: 24%;
   position: relative;
-  padding: 10px;
 }
 .list-bodybar strong {
   color: #333;
@@ -1353,6 +1347,7 @@ li:hover ul.depth2 {
 
 .list-candle {
   display: flex;
+  justify-content: space-between;
 }
 .list-candle a:hover .thumb::before {
   position: absolute;
@@ -1374,11 +1369,13 @@ li:hover ul.depth2 {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.list-candle .txt {
+  padding-bottom: 20px;
+}
 .list-candle li {
   display: block;
-  width: 100%;
+  width: 24%;
   position: relative;
-  padding: 10px;
 }
 .list-candle strong {
   color: #333;
@@ -1392,6 +1389,53 @@ li:hover ul.depth2 {
   padding-bottom: 10px;
 }
 
+@media screen and (max-width: 1024px) {
+  .list-fragrance {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .list-fragrance li {
+    display: block;
+    width: 49%;
+    position: relative;
+  }
+  .list-bodybar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .list-bodybar li {
+    display: block;
+    width: 49%;
+    position: relative;
+  }
+  .list-candle {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .list-candle li {
+    display: block;
+    width: 49%;
+    position: relative;
+  }
+  .list-body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .list-body li {
+    display: block;
+    width: 49%;
+    position: relative;
+  }
+}
+@media screen and (max-width: 744px) {
+  .product-info {
+    margin: 0;
+  }
+}
 .block-cms-text {
   max-width: 1280px;
   top: 0;
@@ -1423,6 +1467,7 @@ li:hover ul.depth2 {
 }
 
 .product-gallery-foot {
+  padding: 30px;
   display: inline-block;
   vertical-align: middle;
 }
@@ -1627,7 +1672,6 @@ li:hover ul.depth2 {
 .gallery-thumb img {
   width: 100%;
   height: 100%;
-  padding: 30px;
 }
 
 .list-like {
@@ -1705,11 +1749,19 @@ li:hover ul.depth2 {
   .gallery-thumb img {
     width: 100%;
     height: 100%;
-    padding: 10px;
   }
   .product-info {
     margin: 0;
-    padding: 12px;
+  }
+  .list-like {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .list-like li {
+    display: block;
+    width: 49%;
+    position: relative;
   }
 }
 .category-filter {
@@ -1785,7 +1837,6 @@ li:hover ul.depth2 {
 .list-service {
   display: flex;
   justify-content: space-between;
-  padding: 0px 5px;
 }
 .list-service img {
   display: block;
