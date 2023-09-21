@@ -20,10 +20,10 @@
     .swiper-slide__txt {
       position: absolute;
       top: 68%;
-      left: 30%;
+      left: 40%;
       text-align: left;
       z-index: 1;
-      width: 50%;
+      width: 60%;
       transform: translate(-50%, -50%);
       strong {
         color: $w;
@@ -575,6 +575,9 @@
   }
   .slide-intro .swiper-slide .swiper-slide__txt strong {
     font-size: 1.25em;
+    display: block;
+    white-space: nowrap;
+    min-height: auto;
   }
   .slide-intro .swiper-slide .swiper-slide__txt p {
     font-size: 0.938em;
