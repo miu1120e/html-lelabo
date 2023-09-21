@@ -137,19 +137,19 @@ input[type=search]::-webkit-search-cancel-button {
 }
 
 /* 기본 폰트 설정 */
-/* mobile */
+/* desktop */
 body {
   background: #fff;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-family: "Noto Sans KR", "Malgun Gothic", "맑은 고딕", sans-serif;
   color: #222;
 }
 
-/* desktop */
-@media screen and (min-width: 1280px) {
+/* mobile  */
+@media screen and (max-width: 1280px) {
   body {
-    font-size: 16px;
+    font-size: 10px;
   }
 }
 /* color값은 디자인가이드에 맞게사용 */
@@ -299,7 +299,7 @@ legend {
 
 @media screen and (max-width: 1024px) {
   .inner {
-    padding: 0 30px;
+    padding: 0 1.875rem;
   }
 }
 .container {
@@ -314,7 +314,7 @@ legend {
   text-align: left;
 }
 .section-g .section-tit {
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
   font-size: 28px;
 }
 
@@ -358,8 +358,8 @@ legend {
   right: 0;
   width: 100%;
   z-index: 1000;
-  -webkit-backdrop-filter: blur(30px);
-          backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(1.875rem);
+          backdrop-filter: blur(1.875rem);
 }
 #header .inner {
   position: relative;
@@ -371,12 +371,17 @@ legend {
   display: flex;
 }
 
+@media screen and (max-width: 744px) {
+  .util {
+    display: none;
+  }
+}
 #logo {
   position: relative;
   z-index: 1100;
   display: block;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 1.25em;
 }
 
 .util__list {
@@ -426,7 +431,7 @@ legend {
   width: 100%;
   color: #fff;
   display: block;
-  font-size: 13px;
+  font-size: 0.813em;
   padding: 10px 10px;
   text-align: center;
   text-decoration: none;
@@ -512,8 +517,8 @@ li:hover ul.depth2 {
   flex-wrap: wrap;
 }
 .lst-thumb-two-column li {
-  width: calc(50% - 10px);
-  margin-bottom: 20px;
+  width: calc(50% - 0.625em);
+  margin-bottom: 1.25em;
 }
 .lst-thumb-two-column li .thumb-shopping {
   position: relative;
@@ -570,23 +575,23 @@ li:hover ul.depth2 {
 
 #footer {
   color: #333;
-  padding: 14px;
+  padding: 1rem;
   border-top: 1px solid #333;
   list-style: none;
 }
 #footer a {
   display: block;
   color: #333;
-  font-size: 14px;
+  font-size: 1rem;
   top: 0;
   left: 0;
-  line-height: 14px;
+  line-height: 1rem;
 }
 #footer .footer-inner {
-  padding: 20px 0;
+  padding: 1.25em 0;
 }
 #footer .footer-secondary {
-  padding: 20px 0;
+  padding: 1.25em 0;
 }
 
 .logo {
@@ -621,9 +626,9 @@ li:hover ul.depth2 {
   font-size: 2.1429rem;
 }
 .slide-intro .swiper-slide .swiper-slide__txt p {
-  margin: 20px 0;
+  margin: 1.25em 0;
   color: #fff;
-  font-size: 20px;
+  font-size: 1.25em;
 }
 
 .btn-10 {
@@ -636,7 +641,7 @@ li:hover ul.depth2 {
   width: 291px;
   height: 46px;
   text-align: center;
-  font-size: 14px;
+  font-size: 1rem;
   line-height: 46px;
 }
 
@@ -695,11 +700,11 @@ li:hover ul.depth2 {
 }
 .slide-item-txt strong {
   min-height: auto;
-  font-size: 19px;
+  font-size: 1rem;
 }
 .slide-item-txt p {
   display: flex;
-  font-size: 16px;
+  font-size: 1rem;
   padding-bottom: 10px;
 }
 
@@ -737,10 +742,10 @@ li:hover ul.depth2 {
 }
 .contents-txt strong {
   color: #fff;
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 .contents-txt p {
-  margin: 20px 0;
+  margin: 1.25em 0;
   color: #fff;
   font-size: 24px;
 }
@@ -796,7 +801,7 @@ li:hover ul.depth2 {
 .list-body .thumb {
   display: block;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -807,12 +812,12 @@ li:hover ul.depth2 {
 .list-body strong {
   color: #333;
   min-height: auto;
-  font-size: 19px;
+  font-size: 1rem;
 }
 .list-body p {
   color: #333;
   display: flex;
-  font-size: 16px;
+  font-size: 1rem;
   padding-bottom: 10px;
 }
 
@@ -854,10 +859,10 @@ li:hover ul.depth2 {
   display: block;
 }
 .section-perfume .like .txt-shopping-desc {
-  margin-top: 20px;
+  margin-top: 1.25em;
 }
 .section-perfume .like .discover {
-  margin-top: 30px;
+  margin-top: 1.875rem;
   width: 291px;
   height: 46px;
   line-height: 42px;
@@ -867,7 +872,7 @@ li:hover ul.depth2 {
   display: block;
   position: relative;
   background: #000;
-  font-size: 14px;
+  font-size: 1rem;
   color: #fff;
   z-index: 1;
 }
@@ -897,7 +902,7 @@ li:hover ul.depth2 {
   font-size: 35px;
 }
 .section-perfume .txt-shopping-desc {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .list-grooming {
@@ -911,7 +916,7 @@ li:hover ul.depth2 {
 .list-grooming .thumb {
   display: block;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -921,17 +926,17 @@ li:hover ul.depth2 {
   position: relative;
 }
 .list-grooming .txt {
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
 }
 .list-grooming strong {
   color: #333;
   min-height: auto;
-  font-size: 19px;
+  font-size: 1rem;
 }
 .list-grooming p {
   color: #333;
   display: flex;
-  font-size: 16px;
+  font-size: 1rem;
   padding-bottom: 10px;
 }
 
@@ -945,7 +950,7 @@ li:hover ul.depth2 {
 .list-service .thumb {
   display: block;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -955,18 +960,18 @@ li:hover ul.depth2 {
   position: relative;
 }
 .list-service .txt {
-  padding-bottom: 20px;
+  padding-bottom: 1.25em;
 }
 .list-service strong {
   color: #333;
   min-height: auto;
-  font-size: 16px;
-  margin-bottom: 20px;
+  font-size: 1rem;
+  margin-bottom: 1.25em;
 }
 .list-service p {
   color: #333;
   display: flex;
-  font-size: 14px;
+  font-size: 0.875em;
   padding-top: 10px;
 }
 
@@ -993,8 +998,8 @@ li:hover ul.depth2 {
   flex-direction: column;
   justify-content: center;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 1.25em;
+  right: 1.25em;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1022,7 +1027,7 @@ li:hover ul.depth2 {
     width: 100%;
     color: #fff;
     display: block;
-    font-size: 12px;
+    font-size: 0.75rem;
     padding: 8px 8px;
     text-align: center;
     text-decoration: none;
@@ -1030,12 +1035,12 @@ li:hover ul.depth2 {
   }
   .slide-intro .swiper-slide .swiper-slide__txt strong {
     color: #fff;
-    font-size: 26px;
+    font-size: 1.625rem;
   }
   .slide-intro .swiper-slide .swiper-slide__txt p {
-    margin: 20px 0;
+    margin: 1.25em 0;
     color: #fff;
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .btn-10 {
     display: block;
@@ -1047,11 +1052,11 @@ li:hover ul.depth2 {
     width: 255px;
     height: 36px;
     text-align: center;
-    font-size: 13px;
+    font-size: 0.813em;
     line-height: 35px;
   }
   .section-g .section-tit {
-    font-size: 20px;
+    font-size: 1.25em;
     color: #000;
   }
   .like {
@@ -1059,21 +1064,21 @@ li:hover ul.depth2 {
   }
   .slide-item-txt strong {
     min-height: auto;
-    font-size: 17px;
+    font-size: 1.063em;
   }
   .slide-item-txt p {
     display: flex;
-    font-size: 14px;
+    font-size: 1rem;
     padding-bottom: 10px;
   }
   .section-perfume .txt-shopping-tit {
-    font-size: 30px;
+    font-size: 1rem;
   }
   .section-perfume .txt-shopping-desc {
-    font-size: 14px;
+    font-size: 1rem;
   }
   .section-perfume .like .discover {
-    margin-top: 30px;
+    margin-top: 1.875rem;
     width: 265px;
     height: 40px;
     line-height: 40px;
@@ -1101,10 +1106,10 @@ li:hover ul.depth2 {
     width: 100%;
   }
   .contents-txt p {
-    font-size: 15px;
+    font-size: 0.875em;
   }
   .section-tit {
-    font-size: 17px;
+    font-size: 1rem;
   }
   .section-contents {
     padding: 0;
@@ -1125,7 +1130,7 @@ li:hover ul.depth2 {
     position: relative;
   }
   .list-body strong {
-    font-size: 15px;
+    font-size: 0.938em;
   }
   .service-item {
     width: 50%;
@@ -1133,10 +1138,10 @@ li:hover ul.depth2 {
 }
 @media screen and (max-width: 428px) {
   .contents-txt p {
-    font-size: 15px;
+    font-size: 0.938em;
   }
   .section-tit {
-    font-size: 17px;
+    font-size: 1.063em;
   }
   .section-contents {
     padding: 0;
@@ -1159,7 +1164,7 @@ li:hover ul.depth2 {
     height: 100%;
     z-index: 1;
     line-height: 35px;
-    font-size: 10px;
+    font-size: 0.7143;
   }
   .slide-intro {
     height: 500px;
@@ -1170,29 +1175,29 @@ li:hover ul.depth2 {
     left: 30%;
   }
   .slide-intro .swiper-slide .swiper-slide__txt strong {
-    font-size: 20px;
+    font-size: 1.25em;
   }
   .slide-intro .swiper-slide .swiper-slide__txt p {
-    font-size: 15px;
+    font-size: 0.938em;
   }
   .btn-10 {
     width: 70%;
     height: 100%;
     text-align: center;
-    font-size: 10px;
+    font-size: 0.7143;
   }
   .section-perfume .txt-shopping-tit {
     font-size: 24px;
   }
   .section-perfume .txt-shopping-desc {
-    font-size: 13px;
+    font-size: 0.813em;
   }
   .product-item {
     width: 48%;
     display: inline-block;
     width: 49%;
     vertical-align: top;
-    font-size: 14px;
+    font-size: 1rem;
     line-height: 1.3;
   }
   .service-item {
@@ -1201,8 +1206,8 @@ li:hover ul.depth2 {
 }
 .category-filter {
   position: relative;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 1.25em;
+  padding-left: 1.25em;
   z-index: 10;
   background: #fff;
   border-top: 0.5px solid #d9d9d9;
@@ -1218,7 +1223,7 @@ li:hover ul.depth2 {
 }
 
 .heading {
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
   text-align: center;
 }
 .heading .best-seller {
@@ -1230,7 +1235,7 @@ li:hover ul.depth2 {
   margin-bottom: 50px;
   max-width: 640px;
   text-align: center;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 300;
 }
 
@@ -1259,12 +1264,12 @@ li:hover ul.depth2 {
 .list-fragrance .thumb {
   display: block;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
   -o-object-fit: contain;
      object-fit: contain;
 }
 .list-fragrance .txt {
-  padding-bottom: 20px;
+  padding-bottom: 1.25em;
 }
 .list-fragrance li {
   display: block;
@@ -1274,12 +1279,12 @@ li:hover ul.depth2 {
 .list-fragrance strong {
   color: #333;
   min-height: auto;
-  font-size: 19px;
+  font-size: 1rem;
 }
 .list-fragrance p {
   color: #333;
   display: flex;
-  font-size: 16px;
+  font-size: 1rem;
   padding-bottom: 10px;
 }
 
@@ -1303,7 +1308,7 @@ li:hover ul.depth2 {
 .list-body .thumb {
   display: block;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -1313,17 +1318,21 @@ li:hover ul.depth2 {
   position: relative;
 }
 .list-body .txt {
-  padding-bottom: 20px;
+  padding-bottom: 1.25em;
 }
 .list-body strong {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
   color: #333;
   min-height: auto;
-  font-size: 19px;
+  font-size: 1rem;
+  text-overflow: ellipsis;
 }
 .list-body p {
   color: #333;
   display: flex;
-  font-size: 16px;
+  font-size: 1remrem;
   padding-bottom: 10px;
 }
 
@@ -1347,12 +1356,12 @@ li:hover ul.depth2 {
 .list-bodybar .thumb {
   display: block;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
   -o-object-fit: contain;
      object-fit: contain;
 }
 .list-bodybar .txt {
-  padding-bottom: 20px;
+  padding-bottom: 1.25em;
 }
 .list-bodybar li {
   display: block;
@@ -1362,12 +1371,12 @@ li:hover ul.depth2 {
 .list-bodybar strong {
   color: #333;
   min-height: auto;
-  font-size: 19px;
+  font-size: 1rem;
 }
 .list-bodybar p {
   color: #333;
   display: flex;
-  font-size: 16px;
+  font-size: 1remem;
   padding-bottom: 10px;
 }
 
@@ -1391,12 +1400,12 @@ li:hover ul.depth2 {
 .list-candle .thumb {
   display: block;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
   -o-object-fit: contain;
      object-fit: contain;
 }
 .list-candle .txt {
-  padding-bottom: 20px;
+  padding-bottom: 1.25em;
 }
 .list-candle li {
   display: block;
@@ -1406,12 +1415,12 @@ li:hover ul.depth2 {
 .list-candle strong {
   color: #333;
   min-height: auto;
-  font-size: 19px;
+  font-size: 1rem;
 }
 .list-candle p {
   color: #333;
   display: flex;
-  font-size: 16px;
+  font-size: 1remem;
   padding-bottom: 10px;
 }
 
@@ -1476,7 +1485,7 @@ li:hover ul.depth2 {
 
 .product-gallery {
   margin: 0;
-  padding: 30px;
+  padding: 1.875rem;
 }
 
 .product-gallery-content {
@@ -1485,22 +1494,22 @@ li:hover ul.depth2 {
 
 .product-gallery-foot {
   font-weight: 500;
-  padding: 12px;
-  font-size: 16px;
+  padding: 0.75rem;
+  font-size: 1rem;
   font-family: "Noto Sans", sans-serif;
   color: #404040;
   width: 100%;
 }
 
 .product-gallery-foot {
-  padding: 30px;
+  padding: 1.875rem;
   display: inline-block;
   vertical-align: middle;
 }
 
 .product-info {
   margin: 0;
-  padding: 30px;
+  padding: 1.875rem;
 }
 
 .product-info-content {
@@ -1519,14 +1528,14 @@ li:hover ul.depth2 {
   font-size: 32px;
   color: #333;
   line-height: 120%;
-  margin-bottom: 15px;
+  margin-bottom: 0.938em;
 }
 
 .block1 {
   display: block;
   font-size: 24px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 0.938em;
+  margin-bottom: 0.938em;
   line-height: 120%;
 }
 
@@ -1538,26 +1547,26 @@ li:hover ul.depth2 {
 
 .product-price {
   font-weight: 500;
-  font-size: 19px;
+  font-size: 1rem;
   font-family: var(--font-family--primary);
   line-height: 135%;
-  margin-top: 15px;
-  margin-bottom: 30px;
+  margin-top: 0.938em;
+  margin-bottom: 1.875rem;
 }
 
 .product-subtitle {
-  margin-bottom: 15px;
+  margin-bottom: 0.938em;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 1rem;
   line-height: 145%;
   color: #898989;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .product-description {
-  padding: 20px 0;
+  padding: 1.25em 0;
   position: relative;
-  font-size: 14px;
+  font-size: 1rem;
   vertical-align: inherit;
   line-height: normal;
 }
@@ -1573,7 +1582,7 @@ li:hover ul.depth2 {
 
 .product-detail-extra-title {
   font-family: "Noto Sans", sans-serif;
-  font-size: 14px;
+  font-size: 1rem;
   letter-spacing: 0.02e;
 }
 
@@ -1591,16 +1600,16 @@ li:hover ul.depth2 {
   color: #404040;
   font-family: "Noto Sans", sans-serif;
   font-weight: norma;
-  font-size: 10px;
+  font-size: 0.7143;
 }
 
 .product-detail-extra-toggle {
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 .product-detail-main-text {
   display: none;
-  font-size: 14px;
+  font-size: 1rem;
   padding: 0;
   margin: 0;
   outline: 0;
@@ -1609,8 +1618,8 @@ li:hover ul.depth2 {
 
 .title {
   font-weight: 500;
-  font-size: 18px;
-  padding: 15px 0;
+  font-size: 1.125rem;
+  padding: 0.938em 0;
 }
 
 .product-c {
@@ -1633,11 +1642,11 @@ li:hover ul.depth2 {
 .product-card .card-txt {
   display: block;
   text-align: center;
-  font-size: 15px;
+  font-size: 0.75rem;
 }
 
 .discover {
-  margin-top: 30px;
+  margin-top: 1.875rem;
   width: 291px;
   height: 46px;
   line-height: 42px;
@@ -1658,7 +1667,7 @@ li:hover ul.depth2 {
   line-height: 42px;
   text-align: center;
   background: #000;
-  font-size: 14px;
+  font-size: 1rem;
   color: #fff;
   z-index: 1;
   border: 1px solid transparent;
@@ -1712,12 +1721,12 @@ li:hover ul.depth2 {
 .list-like .thumb {
   display: block;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
   -o-object-fit: contain;
      object-fit: contain;
 }
 .list-like .like-txt {
-  padding-bottom: 20px;
+  padding-bottom: 1.25em;
 }
 .list-like .like-txt li {
   display: block;
@@ -1727,15 +1736,15 @@ li:hover ul.depth2 {
 .list-like .like-txt strong {
   display: block;
   color: #333;
-  font-size: 19px;
+  font-size: 1rem;
   padding-bottom: 10px;
 }
 .list-like .like-txt p {
   display: block;
   color: #333;
   display: flex;
-  font-size: 16px;
-  padding-bottom: 12px;
+  font-size: 1rem;
+  padding-bottom: 0.75rem;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1795,7 +1804,7 @@ li:hover ul.depth2 {
 }
 .category-filter {
   position: relative;
-  padding-right: 20px;
+  padding-right: 1.25em;
   padding-top: 10px;
   padding-bottom: 10px;
   z-index: 10;
@@ -1813,7 +1822,7 @@ li:hover ul.depth2 {
 }
 
 .heading {
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
   text-align: center;
 }
 .heading .best-seller {
@@ -1825,8 +1834,22 @@ li:hover ul.depth2 {
   margin-bottom: 50px;
   max-width: 640px;
   text-align: center;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 300;
+}
+
+.nav-expand-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: static;
+  top: initial;
+  left: initial;
+  margin-left: 0;
+  width: calc(100% - 125px);
+  height: 37px;
+  transform: none;
+  list-style: none;
 }
 
 .slide-asset-container {
@@ -1863,7 +1886,7 @@ li:hover ul.depth2 {
   overflow: hidden;
 }
 .section-g .section-tit {
-  font-size: 20px;
+  font-size: 1.375rem;
   color: #000;
 }
 .section-g img {
@@ -1875,8 +1898,8 @@ li:hover ul.depth2 {
 
 .section-about {
   color: #333;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 1rem;
+  line-height: 1.063em;
 }
 
 .shell {
@@ -1887,7 +1910,7 @@ li:hover ul.depth2 {
 }
 
 .discovery-e {
-  margin-top: 30px;
+  margin-top: 1.875rem;
   width: 100%;
   height: 46px;
   line-height: 46px;
@@ -1897,7 +1920,7 @@ li:hover ul.depth2 {
   display: block;
   position: relative;
   background: #000;
-  font-size: 14px;
+  font-size: 1rem;
   color: #fff;
   z-index: 1;
 }
@@ -1927,5 +1950,5 @@ li:hover ul.depth2 {
   font-size: 35px;
 }
 .discovery-e .txt-shopping-desc {
-  font-size: 16px;
+  font-size: 1rem;
 }/*# sourceMappingURL=comm.css.map */

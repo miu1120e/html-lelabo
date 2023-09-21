@@ -18,7 +18,7 @@
 }
 @media screen and (max-width: 1024px) {
   .inner {
-    padding: 0 30px;
+    padding: 0 1.875rem;
   }
 }
 .container {
@@ -30,7 +30,7 @@
 .section-g {
   text-align: left;
   .section-tit {
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
     font-size: 28px;
   }
 }
@@ -82,7 +82,7 @@
   right: 0;
   width: 100%;
   z-index: 1000;
-  backdrop-filter: blur(30px);
+  backdrop-filter: blur(1.875rem);
   // box-sizing: border-box;
   .inner {
     position: relative;
@@ -94,12 +94,17 @@
     display: flex;
   }
 }
+@media screen and (max-width: 744px) {
+  .util {
+    display: none;
+  }
+}
 #logo {
   position: relative;
   z-index: 1100;
   display: block;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 1.25em;
 }
 .util__list {
   display: flex;
@@ -145,7 +150,7 @@
   width: 100%;
   color: #fff;
   display: block;
-  font-size: 13px;
+  font-size: 0.813em;
   padding: 10px 10px;
   text-align: center;
   text-decoration: none;
@@ -295,23 +300,23 @@ li:hover ul.depth2 {
 // footer
 #footer {
   color: #333;
-  padding: 14px;
+  padding: 1rem;
   border-top: 1px solid #333;
   list-style: none;
 
   a {
     display: block;
     color: #333;
-    font-size: 14px;
+    font-size: 1rem;
     top: 0;
     left: 0;
-    line-height: 14px;
+    line-height: 1rem;
   }
   .footer-inner {
-    padding: 20px 0;
+    padding: 1.25em 0;
   }
   .footer-secondary {
-    padding: 20px 0;
+    padding: 1.25em 0;
   }
 }
 

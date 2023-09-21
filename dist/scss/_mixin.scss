@@ -54,7 +54,7 @@
 
 @mixin ico_square {
   position: relative;
-  padding-left: 12px;
+  padding-left: 0.75rem;
 
   &::before {
     content: "";
