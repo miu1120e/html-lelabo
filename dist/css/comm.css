@@ -1716,6 +1716,9 @@ li:hover ul.depth2 {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.list-like .like-txt {
+  padding-bottom: 20px;
+}
 .list-like .like-txt li {
   display: block;
   width: 24%;
@@ -1841,10 +1844,6 @@ li:hover ul.depth2 {
   width: 100%;
   height: 100%;
   margin: 0 auto;
-}
-
-.section-about {
-  padding-top: 190px;
 }
 
 .event2 {
