@@ -101,18 +101,18 @@ input {
   &[type="password"],
   &[type="submit"],
   &[type="search"] {
-    -webkit-appearance: none;
+    appearance: none;
     border-radius: 0;
   }
 
   &:checked[type="checkbox"] {
     background-color: #666;
-    -webkit-appearance: checkbox;
+    appearance: checkbox;
   }
 }
 
 button {
-  -webkit-appearance: button;
+  appearance: button;
   border-radius: 0;
 }
 
@@ -121,12 +121,12 @@ input {
   &[type="submit"],
   &[type="reset"],
   &[type="file"] {
-    -webkit-appearance: button;
+    appearance: button;
     border-radius: 0;
   }
 
   &[type="search"]::-webkit-search-cancel-button {
-    -webkit-appearance: none;
+    appearance: none;
   }
 }
 

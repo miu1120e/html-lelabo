@@ -116,24 +116,33 @@ body {
 /* 뷰표트 변환시 폰트크기 자동확대 방지 */
 input[type=text], input[type=password], input[type=submit], input[type=search] {
   -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border-radius: 0;
 }
 input:checked[type=checkbox] {
   background-color: #666;
   -webkit-appearance: checkbox;
+     -moz-appearance: checkbox;
+          appearance: checkbox;
 }
 
 button {
   -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
   border-radius: 0;
 }
 
 input[type=button], input[type=submit], input[type=reset], input[type=file] {
   -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
   border-radius: 0;
 }
 input[type=search]::-webkit-search-cancel-button {
   -webkit-appearance: none;
+          appearance: none;
 }
 
 /* 기본 폰트 설정 */
@@ -762,6 +771,7 @@ li:hover ul.depth2 {
   color: #fff;
   z-index: 1;
   line-height: 46px;
+  font-size: 0.8571rem;
 }
 
 .btn-15:after {
@@ -873,7 +883,7 @@ li:hover ul.depth2 {
   display: block;
   position: relative;
   background: #000;
-  font-size: 1rem;
+  font-size: 0.8571rem;
   color: #fff;
   z-index: 1;
 }
@@ -989,8 +999,8 @@ li:hover ul.depth2 {
 }
 
 .fixed-btn a {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background-color: #333;
   text-align: center;
@@ -1053,7 +1063,7 @@ li:hover ul.depth2 {
     width: 255px;
     height: 36px;
     text-align: center;
-    font-size: 0.813em;
+    font-size: 0.8571rem;
     line-height: 35px;
   }
   .section-g .section-tit {
