@@ -937,6 +937,7 @@ li:hover ul.depth2 {
 
 .list-service {
   display: flex;
+  justify-content: space-between;
 }
 .list-service img {
   display: block;
@@ -953,6 +954,9 @@ li:hover ul.depth2 {
   width: 24%;
   position: relative;
 }
+.list-service .txt {
+  padding-bottom: 20px;
+}
 .list-service strong {
   color: #333;
   min-height: auto;
@@ -963,7 +967,7 @@ li:hover ul.depth2 {
   color: #333;
   display: flex;
   font-size: 14px;
-  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .like {
@@ -1108,6 +1112,9 @@ li:hover ul.depth2 {
   .list-body strong {
     font-size: 15px;
   }
+  .service-item {
+    width: 50%;
+  }
 }
 @media screen and (max-width: 428px) {
   .contents-txt p {
@@ -1172,6 +1179,9 @@ li:hover ul.depth2 {
     vertical-align: top;
     font-size: 14px;
     line-height: 1.3;
+  }
+  .service-item {
+    width: 100%;
   }
 }
 .category-filter {
@@ -1833,38 +1843,6 @@ li:hover ul.depth2 {
 
 .event4 {
   position: relative;
-}
-
-.list-service {
-  display: flex;
-  justify-content: space-between;
-}
-.list-service img {
-  display: block;
-}
-.list-service .thumb {
-  display: block;
-  width: 100%;
-  margin-bottom: 20px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.list-service li {
-  display: block;
-  width: 24%;
-  position: relative;
-}
-.list-service strong {
-  color: #333;
-  min-height: auto;
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-.list-service p {
-  color: #333;
-  display: flex;
-  font-size: 14px;
-  padding-top: 10px;
 }
 
 .section-g {

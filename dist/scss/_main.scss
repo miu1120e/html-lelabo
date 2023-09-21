@@ -335,9 +335,9 @@
     padding-bottom: 10px;
   }
 }
-
 .list-service {
   display: flex;
+  justify-content: space-between;
   img {
     display: block;
   }
@@ -352,7 +352,9 @@
     width: 24%;
     position: relative;
   }
-
+  .txt {
+    padding-bottom: 20px;
+  }
   strong {
     color: #333;
     min-height: auto;
@@ -363,9 +365,10 @@
     color: #333;
     display: flex;
     font-size: 14px;
-    padding-bottom: 10px;
+    padding-top: 10px;
   }
 }
+
 .like {
   width: 50%;
 }
@@ -511,6 +514,9 @@
   .list-body strong {
     font-size: 15px;
   }
+  .service-item {
+    width: 50%;
+  }
 }
 
 // mobile
@@ -579,5 +585,8 @@
     vertical-align: top;
     font-size: 14px;
     line-height: 1.3;
+  }
+  .service-item {
+    width: 100%;
   }
 }
