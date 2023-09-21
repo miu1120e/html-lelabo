@@ -6,6 +6,10 @@ var swiper = new Swiper(".slide-intro", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
