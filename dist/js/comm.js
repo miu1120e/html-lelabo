@@ -42,12 +42,6 @@ var swiper = new Swiper(".slide-contents", {
     },
   },
 });
-// var swiper = new Swiper(".swiper-slide", {
-//   scrollbar: {
-//     el: ".swiper-scrollbar",
-//     hide: true,
-//   },
-// });
 
 $(document).ready(function () {
   $(".product-detail-extra-toggle").click(function () {
