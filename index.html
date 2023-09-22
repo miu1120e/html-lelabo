@@ -65,8 +65,75 @@
     </div>
     <div class="wrap">
       <!-- logo 왼쪽 type -->
-      <header id="header" class="container">
+      <header id="header">
         <div class="inner">
+          <nav class="gnb-wrap">
+            <input type="checkbox" id="inpBurger" class="inp-burger" />
+            <label for="inpBurger">
+              <div class="burger">
+                <span class="bar"></span>
+              </div>
+            </label>
+            <!-- Navbar links -->
+            <div id="gnb">
+              <ul class="category-head">
+                <li>
+                  <a href="#">FRAGRANCES</a>
+                  <ul class="category-sub">
+                    <li>
+                      <a href="#">city Exclusive</a>
+                    </li>
+                    <li>
+                      <a href="#">classic collection</a>
+                    </li>
+                    <li>
+                      <a href="#">category</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">BODY.HAIR.FACE</a>
+                  <ul class="category-sub">
+                    <li>
+                      <a href="#">body</a>
+                    </li>
+                    <li>
+                      <a href="#">hair</a>
+                    </li>
+                    <li>
+                      <a href="#">face</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">BEST SELLER</a>
+                </li>
+                <li>
+                  <a href="#">CALSSIC CANDLE</a>
+                </li>
+                <li>
+                  <a href="#">GROOMING</a>
+                </li>
+                <li>
+                  <a href="#">LIFE STYLE</a>
+                </li>
+                <li>
+                  <a href="#">LELABO</a>
+                  <ul class="category-sub">
+                    <li>
+                      <a href="#">intro</a>
+                    </li>
+                    <li>
+                      <a href="#">product-item</a>
+                    </li>
+                    <li>
+                      <a href="#">overheard lelabo</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
           <h1 id="logo">
             <a href="#">
               <img src="./images/lelabo.png" alt="#">
@@ -75,9 +142,6 @@
           <div class="header__right">
             <div class="util">
               <ul class="util__list">
-      
-                  <!-- a : 링크 연결 / button : 동작처리 -->
-                  <!-- 링크 연결 없이 스크립트 처리 -->
                 <li>
                   <a href="javascript:void(0)">MYPAGE</a>
                 </li>
@@ -85,8 +149,8 @@
                   <a href="javascript:void(0)">LOGIN</a>
                 </li>
               </ul>
-            </div>
           </div>
+        </div>
         </div>
         <nav class="dropdownmenu">
           <h2 class="blind">전체메뉴</h2>
@@ -162,7 +226,7 @@
                   <li><a href="#">BRAND ESTABLISHMENT</a></li>
                   <li><a href="#">MOUSSE DE SHENE 30</a></li>
                 </ul>
-              </li> 
+              </li>
             </ul>
         </nav>
       </header>
@@ -371,9 +435,9 @@
         <div class="like">
           <div class="like-perfume">
             <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" data-aos-once="false" class="txt-shopping-tit">
-              <p>Like perfume, dreams </p>
-              <p>have the ability to take </p>
-              <p>us elsewhere. </p>
+              <p>Like perfume, dreams <br class="pc">
+              have the ability to take <br class="pc">
+              us elsewhere. </p>
             </div>
             <div data-aos="fade-up" data-aos-delay="550" data-aos-duration="1000" data-aos-once="false" class="txt-shopping-desc">
               <p>So close your eyes and make</p>

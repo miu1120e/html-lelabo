@@ -291,3 +291,18 @@ legend {
     content: "";
   }
 }
+
+.pc {
+  display: block;
+}
+.m {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .pc {
+    display: none;
+  }
+  .m {
+    display: block;
+  }
+}
