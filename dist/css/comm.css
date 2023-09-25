@@ -1432,12 +1432,12 @@ legend {
 .list-fragrance .thumb {
   display: block;
   width: 100%;
-  margin-bottom: 1.25em;
+  margin-bottom: 1.25rem;
   -o-object-fit: contain;
      object-fit: contain;
 }
 .list-fragrance .txt {
-  padding-bottom: 1.25em;
+  padding-bottom: 2rem;
 }
 .list-fragrance li {
   display: block;
@@ -1524,12 +1524,12 @@ legend {
 .list-bodybar .thumb {
   display: block;
   width: 100%;
-  margin-bottom: 1.25em;
+  margin-bottom: 1.25rem;
   -o-object-fit: contain;
      object-fit: contain;
 }
 .list-bodybar .txt {
-  padding-bottom: 1.25em;
+  padding-bottom: 2rem;
 }
 .list-bodybar li {
   display: block;
@@ -1544,7 +1544,7 @@ legend {
 .list-bodybar p {
   color: #333;
   display: flex;
-  font-size: 1remem;
+  font-size: 1rem;
   padding-bottom: 10px;
 }
 
@@ -1573,7 +1573,7 @@ legend {
      object-fit: contain;
 }
 .list-candle .txt {
-  padding-bottom: 1.25em;
+  padding-bottom: 2rem;
 }
 .list-candle li {
   display: block;
@@ -1588,11 +1588,20 @@ legend {
 .list-candle p {
   color: #333;
   display: flex;
-  font-size: 1remem;
+  font-size: 1rem;
   padding-bottom: 10px;
 }
 
+.product-related {
+  padding-top: 20px;
+}
+
 @media screen and (max-width: 1024px) {
+  .product-name {
+    width: 100%;
+    font-weight: 400;
+    font-size: 24px;
+  }
   .list-fragrance {
     display: flex;
     justify-content: space-between;
@@ -1688,15 +1697,6 @@ legend {
 .product-header {
   display: flex;
   justify-content: space-between;
-}
-
-.product-name {
-  width: 100%;
-  font-weight: 400;
-  font-size: 32px;
-  color: #333;
-  line-height: 120%;
-  margin-bottom: 0.938em;
 }
 
 .block1 {
@@ -1890,12 +1890,12 @@ legend {
 .list-like .thumb {
   display: block;
   width: 100%;
-  margin-bottom: 1.25em;
+  margin-bottom: 1.25rem;
   -o-object-fit: contain;
      object-fit: contain;
 }
 .list-like .like-txt {
-  padding-bottom: 1.25em;
+  padding-bottom: 2rem;
 }
 .list-like .like-txt li {
   display: block;
