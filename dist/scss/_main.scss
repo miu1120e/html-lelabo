@@ -136,7 +136,7 @@
     right: 0;
     bottom: 0;
     background: $b;
-    opacity: 0.5;
+    opacity: 0.3;
   }
 }
 .contents-txt {
@@ -377,7 +377,7 @@
   p {
     color: #333;
     display: flex;
-    font-size: 0.875em;
+    font-size: 1rem;
     padding-top: 10px;
   }
 }
@@ -622,5 +622,5 @@
   }
 }
 .section-perfume .like .txt-shopping-tit p {
-  font-size: 7vw;
+  font-size: 5vh;
 }

@@ -427,14 +427,14 @@ legend {
   gap: 40px;
 }
 .util__list a {
-  color: #fff;
+  color: #333;
   top: 0;
   right: 50px;
   display: block;
   left: 50px;
 }
 .util__list a:hover {
-  color: #333;
+  color: #fff;
 }
 
 .gnb-wrap {
@@ -459,7 +459,7 @@ legend {
   margin: -2px auto 0;
   cursor: pointer;
   border-radius: 27px;
-  color: #fff;
+  color: #333;
   font-weight: 200;
   font-size: 18px;
 }
@@ -478,7 +478,7 @@ legend {
   display: block;
   margin: 4px 0;
   border-radius: 3px;
-  background-color: #fff;
+  background-color: #333;
   transition: all 200ms ease-in-out;
 }
 .gnb-wrap .inp-burger + label .burger .bar {
@@ -556,7 +556,7 @@ legend {
   width: 100%;
 }
 .dropdownmenu .depth1:hover::before {
-  height: 350px;
+  height: 365px;
   opacity: 1;
 }
 .dropdownmenu .depth1:hover .depth2 {
@@ -567,7 +567,7 @@ legend {
 .dropdownmenu .depth1::before {
   content: "";
   position: absolute;
-  top: 130px;
+  top: 120px;
   left: 0;
   right: 0;
   height: 0;
@@ -581,7 +581,7 @@ legend {
 .dropdownmenu .depth1 a {
   width: 100%;
   height: 40px;
-  color: #fff;
+  color: #eeeeee;
   display: block;
   font-size: 0.813em;
   padding: 10px 10px;
@@ -877,7 +877,7 @@ legend {
   right: 0;
   bottom: 0;
   background: #000;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .contents-txt {
@@ -1122,7 +1122,7 @@ legend {
 .list-service p {
   color: #333;
   display: flex;
-  font-size: 0.875em;
+  font-size: 1rem;
   padding-top: 10px;
 }
 
@@ -1359,7 +1359,7 @@ legend {
   }
 }
 .section-perfume .like .txt-shopping-tit p {
-  font-size: 7vw;
+  font-size: 5vh;
 }
 
 .category-filter {

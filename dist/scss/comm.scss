@@ -123,13 +123,13 @@
   list-style: none;
   gap: 40px;
   a {
-    color: #fff;
+    color: $prim1;
     top: 0;
     right: 50px;
     display: block;
     left: 50px;
     &:hover {
-      color: #333;
+      color: #fff;
     }
   }
 }
@@ -154,7 +154,7 @@
       margin: -2px auto 0;
       cursor: pointer;
       border-radius: 27px;
-      color: #fff;
+      color: $prim1;
       font-weight: 200;
       font-size: 18px;
 
@@ -174,7 +174,7 @@
           display: block;
           margin: 4px 0;
           border-radius: 3px;
-          background-color: #fff;
+          background-color: $prim1;
           transition: all 200ms ease-in-out;
         }
         .bar {
@@ -264,7 +264,7 @@
     width: 100%;
     &:hover {
       &::before {
-        height: 350px;
+        height: 365px;
         opacity: 1;
       }
       .depth2 {
@@ -276,7 +276,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: 130px;
+      top: 120px;
       left: 0;
       right: 0;
       height: 0;
@@ -290,7 +290,7 @@
     a {
       width: 100%;
       height: 40px;
-      color: #fff;
+      color: #eeeeee;
       display: block;
       font-size: 0.813em;
       padding: 10px 10px;
