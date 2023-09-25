@@ -87,8 +87,8 @@
   right: 0;
   width: 100%;
   z-index: 1000;
-  backdrop-filter: blur(1.875rem);
-  background: rgba($w, 0.5);
+  backdrop-filter: blur(1rem);
+  background: rgba($w, 0.1);
   // box-sizing: border-box;
   .inner {
     position: relative;
@@ -121,6 +121,7 @@
   padding-right: 90px;
   margin-right: 10px;
   list-style: none;
+  font-size: 0.813rem;
   gap: 40px;
   a {
     color: $prim1;
@@ -280,7 +281,7 @@
       left: 0;
       right: 0;
       height: 0;
-      background: $prim1;
+      background: gray-e;
       opacity: 0;
       transition: all 0.3s;
     }
@@ -439,12 +440,12 @@
 #footer {
   color: #333;
   padding: 1rem;
-  border-top: 1px solid #333;
+  border-top: 1px solid prim1;
   list-style: none;
 
   a {
     display: block;
-    color: #333;
+    color: prim1;
     font-size: 1rem;
     top: 0;
     left: 0;

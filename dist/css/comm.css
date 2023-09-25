@@ -389,9 +389,9 @@ legend {
   right: 0;
   width: 100%;
   z-index: 1000;
-  -webkit-backdrop-filter: blur(1.875rem);
-          backdrop-filter: blur(1.875rem);
-  background: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
+  background: rgba(255, 255, 255, 0.1);
 }
 #header .inner {
   position: relative;
@@ -424,6 +424,7 @@ legend {
   padding-right: 90px;
   margin-right: 10px;
   list-style: none;
+  font-size: 0.813rem;
   gap: 40px;
 }
 .util__list a {
@@ -571,7 +572,7 @@ legend {
   left: 0;
   right: 0;
   height: 0;
-  background: #333;
+  background: gray-e;
   opacity: 0;
   transition: all 0.3s;
 }
@@ -715,12 +716,12 @@ legend {
 #footer {
   color: #333;
   padding: 1rem;
-  border-top: 1px solid #333;
+  border-top: 1px solid prim1;
   list-style: none;
 }
 #footer a {
   display: block;
-  color: #333;
+  color: prim1;
   font-size: 1rem;
   top: 0;
   left: 0;
