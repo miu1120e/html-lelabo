@@ -389,8 +389,8 @@ legend {
   right: 0;
   width: 100%;
   z-index: 1000;
-  -webkit-backdrop-filter: blur(1rem);
-          backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
   background: rgba(255, 255, 255, 0.1);
 }
 #header .inner {
@@ -416,6 +416,7 @@ legend {
 }
 
 .util__list {
+  font-weight: 500;
   display: flex;
   position: absolute;
   top: 50%;
@@ -424,7 +425,7 @@ legend {
   padding-right: 90px;
   margin-right: 10px;
   list-style: none;
-  font-size: 0.813rem;
+  font-size: 0.875rem;
   gap: 40px;
 }
 .util__list a {
@@ -556,6 +557,12 @@ legend {
   list-style: none;
   width: 100%;
 }
+.dropdownmenu .depth1 .menuhead {
+  font-weight: 500;
+  display: block;
+  font-size: 15px;
+  color: #333;
+}
 .dropdownmenu .depth1:hover::before {
   height: 365px;
   opacity: 1;
@@ -572,7 +579,7 @@ legend {
   left: 0;
   right: 0;
   height: 0;
-  background: gray-e;
+  background: #333;
   opacity: 0;
   transition: all 0.3s;
 }
@@ -582,9 +589,9 @@ legend {
 .dropdownmenu .depth1 a {
   width: 100%;
   height: 40px;
-  color: #eeeeee;
+  color: #eee;
   display: block;
-  font-size: 0.813em;
+  font-size: 13px;
   padding: 10px 10px;
   text-align: center;
   text-decoration: none;
@@ -750,7 +757,8 @@ legend {
   width: 100%;
   height: 100%;
   padding: 4%;
-  background: rgba(0, 0, 0, 0);
+  background: #000;
+  opacity: 0.15;
 }
 .slide-intro .swiper-slide .swiper-slide__txt {
   position: absolute;
@@ -878,7 +886,7 @@ legend {
   right: 0;
   bottom: 0;
   background: #000;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
 .contents-txt {
@@ -1015,7 +1023,7 @@ legend {
 }
 .section-perfume .like .discover {
   margin-top: 1.875rem;
-  width: 291px;
+  width: 350px;
   height: 46px;
   line-height: 42px;
   text-align: center;
@@ -1078,7 +1086,7 @@ legend {
   position: relative;
 }
 .list-grooming .txt {
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 .list-grooming strong {
   color: #333;
@@ -1102,7 +1110,7 @@ legend {
 .list-service .thumb {
   display: block;
   width: 100%;
-  margin-bottom: 1.25em;
+  margin-bottom: 1.25rem;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -1112,13 +1120,13 @@ legend {
   position: relative;
 }
 .list-service .txt {
-  padding-bottom: 1.25em;
+  padding-bottom: 2rem;
 }
 .list-service strong {
   color: #333;
   min-height: auto;
   font-size: 1rem;
-  margin-bottom: 1.25em;
+  margin-bottom: 1.25rem;
 }
 .list-service p {
   color: #333;
@@ -1213,7 +1221,7 @@ legend {
   }
   .slide-item-txt strong {
     min-height: auto;
-    font-size: 1.063em;
+    font-size: 1rem;
   }
   .slide-item-txt p {
     display: flex;
@@ -1228,7 +1236,7 @@ legend {
   }
   .section-perfume .like .discover {
     margin-top: 1.875rem;
-    width: 265px;
+    width: 100%;
     height: 40px;
     line-height: 40px;
     text-align: center;
@@ -1237,6 +1245,7 @@ legend {
 @media screen and (max-width: 744px) {
   .like {
     width: 100%;
+    margin-top: 20px;
   }
   .section-g img {
     height: 100%;
@@ -1360,7 +1369,7 @@ legend {
   }
 }
 .section-perfume .like .txt-shopping-tit p {
-  font-size: 5vh;
+  font-size: 4vh;
 }
 
 .category-filter {
@@ -1477,7 +1486,7 @@ legend {
   position: relative;
 }
 .list-body .txt {
-  padding-bottom: 20px;
+  padding-bottom: 2rem;
 }
 .list-body strong {
   display: block;
@@ -1491,7 +1500,7 @@ legend {
 .list-body p {
   color: #333;
   display: flex;
-  font-size: 1remrem;
+  font-size: 1rem;
   padding-bottom: 10px;
 }
 

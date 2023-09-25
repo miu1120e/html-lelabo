@@ -6,6 +6,7 @@
 // main slide top
 .slide-intro {
   height: 922px;
+
   .swiper-slide {
     &:after {
       content: "";
@@ -15,7 +16,8 @@
       width: 100%;
       height: 100%;
       padding: 4%;
-      background: rgba(0, 0, 0, 0);
+      background: #000;
+      opacity: 0.15;
     }
     .swiper-slide__txt {
       position: absolute;
@@ -37,6 +39,7 @@
     }
   }
 }
+
 .btn-10 {
   display: block;
   position: relative;
@@ -136,7 +139,7 @@
     right: 0;
     bottom: 0;
     background: $b;
-    opacity: 0.3;
+    opacity: 0.2;
   }
 }
 .contents-txt {
@@ -270,7 +273,7 @@
     }
     .discover {
       margin-top: 1.875rem;
-      width: 291px;
+      width: 350px;
       height: 46px;
       line-height: 42px;
       text-align: center;
@@ -334,7 +337,7 @@
     position: relative;
   }
   .txt {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
   }
   strong {
     color: #333;
@@ -357,7 +360,7 @@
   .thumb {
     display: block;
     width: 100%;
-    margin-bottom: 1.25em;
+    margin-bottom: 1.25rem;
     object-fit: contain;
   }
   li {
@@ -366,13 +369,13 @@
     position: relative;
   }
   .txt {
-    padding-bottom: 1.25em;
+    padding-bottom: 2rem;
   }
   strong {
     color: #333;
     min-height: auto;
     font-size: 1rem;
-    margin-bottom: 1.25em;
+    margin-bottom: 1.25rem;
   }
   p {
     color: #333;
@@ -467,7 +470,7 @@
   }
   .slide-item-txt strong {
     min-height: auto;
-    font-size: 1.063em;
+    font-size: 1rem;
   }
   .slide-item-txt p {
     display: flex;
@@ -482,7 +485,7 @@
   }
   .section-perfume .like .discover {
     margin-top: 1.875rem;
-    width: 265px;
+    width: 100%;
     height: 40px;
     line-height: 40px;
     text-align: center;
@@ -495,6 +498,7 @@
 @media screen and (max-width: 744px) {
   .like {
     width: 100%;
+    margin-top: 20px;
   }
   .section-g img {
     height: 100%;
@@ -622,5 +626,5 @@
   }
 }
 .section-perfume .like .txt-shopping-tit p {
-  font-size: 5vh;
+  font-size: 4vh;
 }
