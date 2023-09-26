@@ -23,7 +23,7 @@
 }
 @media screen and (max-width: 1280px) {
   .inner {
-    padding: 0 1rem;
+    padding: 0;
   }
 }
 .container {
@@ -449,10 +449,13 @@
   padding: 1rem;
   border-top: 1px solid prim1;
   list-style: none;
-
+  .footer-header {
+    border-top: 1px solid #000;
+    padding-top: 30px;
+  }
   a {
     display: block;
-    color: prim1;
+    color: #333;
     font-size: 1rem;
     top: 0;
     left: 0;
