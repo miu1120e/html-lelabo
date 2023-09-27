@@ -88,9 +88,9 @@
   right: 0;
   width: 100%;
   z-index: 1000;
-  backdrop-filter: blur(2rem);
-  // background: rgba($w, 0.1);
-  // box-sizing: border-box;
+  backdrop-filter: blur(1rem);
+  background: rgba($w, 0.1);
+  box-sizing: border-box;
   .inner {
     position: relative;
     display: flex;
