@@ -23,6 +23,9 @@
   .inner {
     padding: 0;
   }
+  .dropdownmenu .depth1 .menuhead {
+    font-size: 12px;
+  }
 }
 .container {
   padding: 0 $bothMargin;
@@ -309,6 +312,11 @@
       transition: all 0.25s ease;
       box-sizing: border-box;
     }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .dropdownmenu .depth1 .menuhead {
+    font-size: 12px;
   }
 }
 .depth2 {

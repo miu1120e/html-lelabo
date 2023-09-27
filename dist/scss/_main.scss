@@ -501,6 +501,9 @@
 // *** width 744px 이하일 경우 (mobile)
 // lelabo-main
 @media screen and (max-width: 744px) {
+  .slide-intro {
+    height: 700px;
+  }
   .like {
     width: 100%;
     margin-top: 20px;
@@ -595,6 +598,7 @@
       width: 100%;
       text-align: center;
     }
+
     .slide-intro .swiper-slide .swiper-slide__txt strong {
       font-size: 1.25em;
       display: block;
