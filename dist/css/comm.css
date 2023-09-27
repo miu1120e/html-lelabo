@@ -308,10 +308,6 @@ legend {
     display: block;
   }
 }
-.wrap {
-  padding-top: 70px;
-}
-
 #main {
   background: #fff;
 }
@@ -391,7 +387,6 @@ legend {
   z-index: 1000;
   -webkit-backdrop-filter: blur(2rem);
           backdrop-filter: blur(2rem);
-  background: rgba(255, 255, 255, 0.1);
 }
 #header .inner {
   position: relative;
@@ -560,7 +555,7 @@ legend {
 .dropdownmenu .depth1 .menuhead {
   font-weight: 500;
   display: block;
-  font-size: 15px;
+  font-size: 13px;
   color: #333;
 }
 .dropdownmenu .depth1:hover::before {
@@ -591,7 +586,7 @@ legend {
   height: 40px;
   color: #eee;
   display: block;
-  font-size: 13px;
+  font-size: 12px;
   padding: 10px 10px;
   text-align: center;
   text-decoration: none;
@@ -1020,10 +1015,11 @@ legend {
 }
 .section-perfume .like .txt-shopping-tit {
   display: block;
-  font-size: 2.1429rem;
+  font-size: 2rem;
 }
 .section-perfume .like .txt-shopping-desc {
   margin-top: 1.25em;
+  font-size: 1rem;
 }
 .section-perfume .like .discover {
   margin-top: 1.875rem;
@@ -1141,6 +1137,7 @@ legend {
 
 .like {
   width: 50%;
+  padding: 10px;
 }
 
 .event2 {
@@ -1240,10 +1237,13 @@ legend {
   }
   .section-perfume .like .discover {
     margin-top: 1.875rem;
-    width: 100%;
+    width: 90%;
     height: 40px;
     line-height: 40px;
     text-align: center;
+  }
+  .like-perfume {
+    width: 90%;
   }
 }
 @media screen and (max-width: 744px) {
@@ -1298,9 +1298,9 @@ legend {
     width: 50%;
   }
 }
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 744px) and (max-width: 428px) {
   .contents-txt p {
-    font-size: 0.938em;
+    font-size: 1rem;
   }
   .section-tit {
     font-size: 1.063em;
@@ -1354,11 +1354,11 @@ legend {
     text-align: center;
     font-size: 0.7143rem;
   }
-  .section-perfume .txt-shopping-tit {
-    font-size: 24px;
-  }
   .section-perfume .txt-shopping-desc {
-    font-size: 0.813em;
+    font-size: 1rem;
+  }
+  .section-perfume .like .txt-shopping-tit p {
+    font-size: 3.5vh;
   }
   .product-item {
     width: 48%;
@@ -1372,10 +1372,6 @@ legend {
     width: 100%;
   }
 }
-.section-perfume .like .txt-shopping-tit p {
-  font-size: 4vh;
-}
-
 .category-filter {
   position: relative;
   padding-right: 1.25em;
