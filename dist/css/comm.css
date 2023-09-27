@@ -163,6 +163,7 @@ body {
 }
 /* color값은 디자인가이드에 맞게사용 */
 a {
+  color: #333;
   text-decoration: none;
 }
 a:active, a:hover {
@@ -638,15 +639,14 @@ legend {
   width: 100%;
   height: 100%;
 }
-
-.swiper-slide {
+.swiper .swiper-slide {
   text-align: center;
   font-size: 1.2857rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.swiper-slide img {
+.swiper .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
@@ -1252,7 +1252,7 @@ legend {
     line-height: 40px;
     text-align: center;
   }
-  .like-perfume {
+  .section-perfume .like-perfume {
     width: 90%;
   }
 }
@@ -1692,14 +1692,14 @@ legend {
 }
 
 .product-gallery-foot {
-  padding: 1.875rem;
+  padding: 20px;
   display: inline-block;
   vertical-align: middle;
 }
 
 .product-info {
   margin: 0;
-  padding: 1.875rem;
+  padding: 20px;
 }
 
 .product-info-content {
@@ -1712,6 +1712,10 @@ legend {
   justify-content: space-between;
 }
 
+.product-1 h2 {
+  font-size: 2.5rem;
+}
+
 .block1 {
   display: block;
   font-size: 24px;
@@ -1721,6 +1725,7 @@ legend {
 }
 
 .block2 {
+  font-size: 1rem;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -1888,7 +1893,7 @@ legend {
 .gallery-thumb img {
   width: 100%;
   height: 100%;
-  padding-bottom: 50px;
+  padding: 50px 0 50px;
 }
 
 .list-like {
@@ -1919,7 +1924,6 @@ legend {
   display: block;
   color: #333;
   font-size: 1rem;
-  padding-bottom: 10px;
 }
 .list-like .like-txt p {
   display: block;
@@ -2037,7 +2041,7 @@ legend {
 .slide-asset-container {
   display: block;
   position: relative;
-  height: 400px;
+  height: 300px;
   justify-content: center;
 }
 

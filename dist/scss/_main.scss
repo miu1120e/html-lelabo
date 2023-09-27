@@ -470,30 +470,34 @@
     font-size: 1.25em;
     color: #000;
   }
-  .slide-item-txt strong {
-    min-height: auto;
-    font-size: 1rem;
+  .slide-item-txt {
+    strong {
+      min-height: auto;
+      font-size: 1rem;
+    }
+    p {
+      display: flex;
+      font-size: 1rem;
+      padding-bottom: 10px;
+    }
   }
-  .slide-item-txt p {
-    display: flex;
-    font-size: 1rem;
-    padding-bottom: 10px;
-  }
-  .section-perfume .txt-shopping-tit {
-    font-size: 1rem;
-  }
-  .section-perfume .txt-shopping-desc {
-    font-size: 1rem;
-  }
-  .section-perfume .like .discover {
-    margin-top: 1.875rem;
-    width: 90%;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-  }
-  .like-perfume {
-    width: 90%;
+  .section-perfume {
+    .txt-shopping-tit {
+      font-size: 1rem;
+    }
+    .txt-shopping-desc {
+      font-size: 1rem;
+    }
+    .like .discover {
+      margin-top: 1.875rem;
+      width: 90%;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+    }
+    .like-perfume {
+      width: 90%;
+    }
   }
 }
 
