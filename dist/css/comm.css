@@ -342,6 +342,7 @@ legend {
 }
 
 .section-g {
+  padding: 4%;
   text-align: left;
 }
 .section-g .section-tit {
@@ -481,7 +482,7 @@ legend {
   display: block;
   margin: 4px 0;
   border-radius: 3px;
-  background-color: #333;
+  background-color: #fff;
   transition: all 200ms ease-in-out;
 }
 .gnb-wrap .inp-burger + label .burger .bar {
@@ -524,7 +525,7 @@ legend {
   text-align: center;
 }
 #gnb .category-head > li {
-  padding: 10px 0;
+  padding: 6px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 #gnb .category-head > li > a {
@@ -2069,6 +2070,7 @@ legend {
 }
 
 .section-g {
+  padding: 4%;
   overflow: hidden;
 }
 .section-g .section-tit {

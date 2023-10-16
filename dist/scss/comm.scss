@@ -34,6 +34,7 @@
   background: $gray-e;
 }
 .section-g {
+  padding: 4%;
   text-align: left;
   .section-tit {
     margin-bottom: 1rem;
@@ -177,7 +178,7 @@
           display: block;
           margin: 4px 0;
           border-radius: 3px;
-          background-color: $prim1;
+          background-color: #fff;
           transition: all 200ms ease-in-out;
         }
         .bar {
@@ -229,7 +230,7 @@
   .category-head {
     text-align: center;
     > li {
-      padding: 10px 0;
+      padding: 6px 0;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
       > a {
         display: block;
@@ -359,19 +360,19 @@
 .swiper {
   width: 100%;
   height: 100%;
-.swiper-slide {
-  text-align: center;
-  font-size: 1.2857rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  .swiper-slide {
+    text-align: center;
+    font-size: 1.2857rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
-}
 }
 
 // main
