@@ -79,12 +79,14 @@ q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after {
+blockquote:before,
+blockquote:after {
   content: "";
   content: none;
 }
 
-q:before, q:after {
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -114,35 +116,41 @@ body {
 }
 
 /* 뷰표트 변환시 폰트크기 자동확대 방지 */
-input[type=text], input[type=password], input[type=submit], input[type=search] {
+input[type="text"],
+input[type="password"],
+input[type="submit"],
+input[type="search"] {
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 0;
 }
-input:checked[type=checkbox] {
+input:checked[type="checkbox"] {
   background-color: #666;
   -webkit-appearance: checkbox;
-     -moz-appearance: checkbox;
-          appearance: checkbox;
+  -moz-appearance: checkbox;
+  appearance: checkbox;
 }
 
 button {
   -webkit-appearance: button;
-     -moz-appearance: button;
-          appearance: button;
+  -moz-appearance: button;
+  appearance: button;
   border-radius: 0;
 }
 
-input[type=button], input[type=submit], input[type=reset], input[type=file] {
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="file"] {
   -webkit-appearance: button;
-     -moz-appearance: button;
-          appearance: button;
+  -moz-appearance: button;
+  appearance: button;
   border-radius: 0;
 }
-input[type=search]::-webkit-search-cancel-button {
+input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
 /* 기본 폰트 설정 */
@@ -166,7 +174,8 @@ a {
   color: #333;
   text-decoration: none;
 }
-a:active, a:hover {
+a:active,
+a:hover {
   text-decoration: none;
 }
 
@@ -185,7 +194,7 @@ hr {
   display: none;
 }
 
-input[type=password] {
+input[type="password"] {
   font-family: "Malgun Gothic";
 }
 
@@ -391,7 +400,7 @@ legend {
   width: 100%;
   z-index: 1000;
   -webkit-backdrop-filter: blur(1rem);
-          backdrop-filter: blur(1rem);
+  backdrop-filter: blur(1rem);
   background: rgba(255, 255, 255, 0.1);
   box-sizing: border-box;
 }
@@ -475,7 +484,9 @@ legend {
   width: 60px;
   height: 60px;
 }
-.gnb-wrap .inp-burger + label .burger .bar, .gnb-wrap .inp-burger + label .burger::after, .gnb-wrap .inp-burger + label .burger::before {
+.gnb-wrap .inp-burger + label .burger .bar,
+.gnb-wrap .inp-burger + label .burger::after,
+.gnb-wrap .inp-burger + label .burger::before {
   content: "";
   width: 26px;
   height: 2px;
@@ -652,7 +663,7 @@ legend {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .section-g {
@@ -694,9 +705,9 @@ legend {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: 0 50%;
-     object-position: 0 50%;
+  object-position: 0 50%;
   transition: transform 0.3s;
 }
 .lst-thumb-two-column li .thumb-shopping::after {
@@ -729,7 +740,7 @@ legend {
 #footer {
   color: #333;
   padding: 1rem;
-  border-top: 1px solid prim1;
+  border-top: 1px solid #000;
   list-style: none;
 }
 #footer .footer-header {
@@ -843,7 +854,7 @@ legend {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .slide-item-txt {
@@ -930,7 +941,7 @@ legend {
   color: #fff;
   z-index: 1;
   line-height: 46px;
-  font-size: 0.8571rem;
+  font-size: 12px;
 }
 
 .btn-15:after {
@@ -972,7 +983,7 @@ legend {
   position: relative;
   margin-bottom: 1.25em;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .list-body li {
   display: block;
@@ -1089,7 +1100,7 @@ legend {
   width: 100%;
   margin-bottom: 1.25em;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .list-grooming li {
   display: block;
@@ -1123,7 +1134,7 @@ legend {
   width: 100%;
   margin-bottom: 1.25rem;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .list-service li {
   display: block;
@@ -1448,7 +1459,7 @@ legend {
   width: 100%;
   margin-bottom: 1.25rem;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .list-fragrance .txt {
   padding-bottom: 2rem;
@@ -1492,7 +1503,7 @@ legend {
   width: 100%;
   margin-bottom: 1.25em;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .list-body li {
   display: block;
@@ -1540,7 +1551,7 @@ legend {
   width: 100%;
   margin-bottom: 1.25rem;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .list-bodybar .txt {
   padding-bottom: 2rem;
@@ -1584,7 +1595,7 @@ legend {
   width: 100%;
   margin-bottom: 1.25em;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .list-candle .txt {
   padding-bottom: 2rem;
@@ -1770,7 +1781,6 @@ legend {
 .product-detail-extra-title {
   font-family: "Noto Sans", sans-serif;
   font-size: 1rem;
-  letter-spacing: 0.02e;
 }
 
 .product-detail-thumb {
@@ -1786,8 +1796,8 @@ legend {
   letter-spacing: 0.02em;
   color: #404040;
   font-family: "Noto Sans", sans-serif;
-  font-weight: norma;
-  font-size: 0.7143;
+  font-weight: normal;
+  font-size: 0.7143rem;
 }
 
 .product-detail-extra-toggle {
@@ -1911,7 +1921,7 @@ legend {
   width: 100%;
   margin-bottom: 1.25rem;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .list-like .like-txt {
   padding-bottom: 2rem;
@@ -2139,4 +2149,4 @@ legend {
 }
 .discovery-e .txt-shopping-desc {
   font-size: 1rem;
-}/*# sourceMappingURL=comm.css.map */
+} /*# sourceMappingURL=comm.css.map */
